@@ -1,14 +1,33 @@
 @import "libs/fonts";
+@import 'libs/variebles';
 @import 'libs/normalize';
+@import 'libs/swiper';
 
 @import "libs/template_elements/button";
 @import "libs/template_elements/title";
+@import "libs/template_elements/breadcrumbs";
 
 
+@import "libs/template_sections/mobile-menu";
+@import "libs/template_sections/main_services";
 @import "libs/template_sections/header";
 @import "libs/template_sections/footer";
+@import "libs/template_sections/video";
+@import "libs/template_sections/our-team";
+@import "libs/template_sections/reviews";
+@import "libs/template_sections/instagram";
 
 
+
+@import "libs/index/index";
+@import "libs/404/404";
+@import "libs/blog/blog";
+@import "libs/gallery/gallery";
+@import "libs/gallery_list/gallery_list";
+@import "libs/blog_news/blog_news";
+@import "libs/privacy_policy/privacy_policy";
+@import "libs/store/store";
+@import "libs/product_card/product_card";
 
 body {
     min-height: 100vh;
@@ -16,12 +35,14 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    
 }
 
 html {
     box-sizing: border-box;
     position: relative;
     height: 100%;
+    
 }
 
 * {
@@ -40,6 +61,7 @@ html {
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
+    transition: .3s all ease;
 }
 
 *:before,
@@ -105,30 +127,29 @@ a {
     width: 100%;
     margin: 0 auto;
     position: relative;
-
-}
+    padding: 0 20px;
+    overflow: hidden;
+}   
 
 @media (min-width: 648px) {
 
     .container {
-        
+        padding: 0 40px;
     }
 
 }
-
-@media (min-width: 960px) {
-
-    .container {
-        
-    }
-
-}
-
 
 @media (min-width: 1366px) {
 
     .container {
-        
+        padding: 0 80px;
+    }
+
+}
+@media (min-width: 1880px) {
+
+    .container {
+        padding: 0 120px;
     }
 
 }

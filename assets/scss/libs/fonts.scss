@@ -1,10 +1,37 @@
 @font-face {
-  font-family: 'Cormorant Garamond';
-  src: url('../fonts/Garamond/CormorantGaramond-LightItalic.eot');
-  src: url('../fonts/Garamond/CormorantGaramond-LightItalic.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Garamond/CormorantGaramond-LightItalic.woff2') format('woff2'),
-  url('../fonts/Garamond/CormorantGaramond-LightItalic.woff') format('woff'),
-  url('../fonts/Garamond/CormorantGaramond-LightItalic.svg#CormorantGaramond-LightItalic') format('svg');
-  font-weight: 300;
-  font-style: italic;
+  font-family: Inter;
+  src: url('../fonts/Inter-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
 }
+@font-face {
+  font-family: Inter;
+  src: url('../fonts/Inter-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Inter;
+  src: url('../fonts/Inter-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Inter;
+  src: url('../fonts/Inter-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Inter;
+  src: url('../fonts/Inter-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Marck Script";
+  src: url('../fonts/MarckScript-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+

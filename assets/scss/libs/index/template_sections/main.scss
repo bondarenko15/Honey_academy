@@ -1,0 +1,240 @@
+.main {
+    background: radial-gradient(50% 50% at 50% 50%, #FFE472 0%, #FFCE00 100%);
+    padding: 90px 0 0;
+    position: relative;
+
+    .container {
+        .main_title {
+            color: $Color_dark-title;
+            font-family: Inter;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: normal;
+            margin: 0;
+
+            i {
+                color: $Color_white;
+                font-family: "Marck Script";
+                font-size: 40px;
+                font-weight: 400;
+                line-height: normal;
+                display: inline-block;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -8px;
+                    left: 0;
+                    background: url('../img/blue_line.svg') center center/cover no-repeat;
+                    width: 165px;
+                    height: 19px;
+                }
+            }
+        }
+
+        p {
+            display: block;
+            margin-top: 40px;
+            color: $Color_dark-text;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: normal;
+
+            i {
+                color: #FF5C17;
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 800;
+                line-height: normal;
+            }
+        }
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 648px) {
+    .main {
+        padding: 180px 0 160px;
+
+        .container {
+            .main_title {
+                display: block;
+                width: 70%;
+                font-size: 40px;
+
+                i {
+                    font-size: 50px;
+
+                    &::after {
+                        bottom: -10px;
+                        width: 204px;
+                        height: 26px;
+                    }
+                }
+            }
+
+            p {
+                width: 353px;
+                font-size: 16px;
+
+                i {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            width: 46%;
+            display: block;
+            position: absolute;
+            bottom: 134px;
+            right: 0;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .main {
+        padding: 180px 0 100px;
+
+        .container {
+            .main_title {
+                display: block;
+                width: 55%;
+                font-size: 50px;
+
+                i {
+                    font-size: 60px;
+
+                    &::after {
+                        bottom: -19px;
+                        width: 243px;
+                        height: 31px;
+
+                    }
+                }
+            }
+
+            p {
+                width: 446px;
+                font-size: 20px;
+
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .desktop {
+            width: 52%;
+            bottom: -63px;
+        }
+    }
+}
+
+
+@media (min-width: 1366px) {
+    .main {
+        padding: 220px 0 160px;
+
+        .container {
+            .main_title {
+                width: 60%;
+                font-size: 75px;
+
+                i {
+                    font-size: 90px;
+
+                    &::after {
+                        bottom: -23px;
+                        width: 369px;
+                        height: 46px;
+
+                    }
+                }
+            }
+
+            p {
+                width: 536px;
+                font-size: 24px;
+                margin-top: 60px;
+                i {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .desktop {
+            bottom: -72px;
+            width: 42%;
+
+        }
+    }
+}
+
+
+@media (min-width: 1880px) {
+    .main {
+        padding: 250px 0 210px;
+
+        .container {
+            .main_title {
+                width: 55%;
+                font-size: 90px;
+
+                i {
+                    font-size: 110px;
+
+                    &::after {
+                        bottom: -28px;
+                        width: 435px;
+                        height: 60px;
+
+                    }
+                }
+            }
+
+            p {
+                width: 778px;
+                font-size: 28px;
+                margin-top: 75px;
+                i {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .desktop {
+            bottom: -100px;
+            width: 44%;
+
+        }
+    }
+}
+
+@media (min-width: 2400px) {
+    .main {
+        .container {
+            .main_title {
+                width: 40%;
+            }
+        }
+        .desktop {
+            width: 33%;
+
+        }
+    }
+}

@@ -1,0 +1,136 @@
+.main_404 {
+    padding: 150px 0 60px;
+
+    .container {
+        .main-title {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                color: $Color_title;
+                font-family: "Marck Script";
+                font-size: 180px;
+                font-weight: 400;
+                line-height: 90.9%;
+            }
+
+            img {
+                width: 105px;
+                height: 105px;
+                display: block;
+                margin: 0 20px;
+            }
+        }
+
+        .text {
+            margin: 40px auto 0;
+
+            p {
+                display: block;
+                color: $Color_dark-title;
+                text-align: center;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 139.6%;
+                margin-top: 5px;
+
+            }
+
+            .bold {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media (min-width: 648px) {
+    .main_404 {
+        padding: 200px 0 80px;
+
+        .container {
+            .main-title {
+                span {
+                    font-size: 300px;
+                }
+
+                img {
+                    width: 167px;
+                    height: 167px;
+                    margin: 0 25px;
+                }
+            }
+
+            .text {
+                margin: 60px auto 0;
+
+                p {
+                    font-size: 20px;
+                    margin-top: 10px;
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1366px) {
+    .main_404 {
+        padding: 150px 0 100px;
+
+        .container {
+            .main-title {
+                span {
+                    font-size: 400px;
+                }
+
+                img {
+                    width: 205px;
+                    height: 205px;
+                    margin: 0 30px;
+                }
+            }
+
+            .text {
+                margin: 70px auto 0;
+
+                p {
+                    font-size: 25px;
+                    margin-top: 10px;
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1880px) {
+    .main_404 {
+
+        .container {
+            .main-title {
+                span {
+                    font-size: 500px;
+                }
+
+                img {
+                    width: 265px;
+                    height: 265px;
+                    margin: 0 35px;
+                }
+            }
+
+            .text {
+                margin: 70px auto 0;
+
+                p {
+                    font-size: 25px;
+                    margin-top: 10px;
+
+                }
+            }
+        }
+    }
+}

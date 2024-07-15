@@ -1,0 +1,98 @@
+.privacy_policy-main {
+    padding: 80px 0 60px;
+    .container {
+        .subtitle {
+            display: block;
+            color: $Color_dark-title;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 30px;
+        }
+
+        p {
+            display: block;
+            margin-top: 20px;
+            color: $Color_dark-title;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .privacy_policy-items {
+            li {
+                display: block;
+                padding-left: 20px;
+                position: relative;
+                color: $Color_dark-title;
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 20px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 8px;
+                    transform: translateY(-50%);
+                    background: $Color_black;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 648px) {
+    .privacy_policy-main {
+        padding: 100px 0 80px;
+        .container {
+            .subtitle {
+                font-size: 18px;
+                margin-top: 30px;
+            }
+    
+            p {
+                margin-top: 20px;
+                font-size: 16px;
+            }
+    
+            .privacy_policy-items {
+                li {
+                    padding-left: 20px;
+                    font-size: 16px;
+                    margin-top: 20px;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1366px) {
+    .privacy_policy-main {
+        padding: 120px 0 100px;
+        .container {
+            .subtitle {
+                font-size: 20px;
+                margin-top: 40px;
+            }
+    
+            p {
+                margin-top: 30px;
+                font-size: 18px;
+            }
+    
+            .privacy_policy-items {
+                li {
+                    padding-left: 20px;
+                    font-size: 18px;
+                    margin-top: 30px;
+                    
+                }
+            }
+        }
+    }
+}

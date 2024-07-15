@@ -1,0 +1,301 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 0 0;
+    width: 100%;
+    z-index: 9;
+
+    .container {
+        .header_flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .header_logo {
+                img {
+                    width: 88px;
+                    height: 30px;
+                }
+            }
+
+            nav {
+                display: none;
+            }
+
+            .header_social {
+                display: none;
+
+            }
+
+            .header_phone {
+                display: none;
+            }
+
+            .header_language {
+                display: none;
+            }
+
+            .header_menu {
+                width: 36px;
+                height: 19px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                position: relative;
+
+                .header_burger {
+                    width: 30px;
+                    height: 3px;
+                    background: $Color_white;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: $Color_white;
+                        height: 3px;
+                        width: 36px;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        background: $Color_white;
+                        height: 3px;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+.fixed {
+    position: fixed;
+    background: $Color_yellow-bg;
+    border-radius: 0 0 10px 10px;
+    padding: 20px 0
+}
+@media (min-width: 648px) {
+    .header {
+        .container {
+            .header_flex {
+                .header_logo {
+                    img {
+                        width: 100px;
+                        height: 36px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1366px) {
+    .header {
+        .container {
+            .header_flex {
+                .header_logo {
+                    img {
+                        width: 108px;
+                        height: 38px;
+                    }
+                }
+
+                nav {
+                    display: block;
+                    width: 55%;
+
+                    .header_navigation {
+
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .navigation_item {
+
+                            a,
+                            span {
+                                color: $Color_navMenu;
+                                font-family: Inter;
+                                font-size: 16px;
+                                font-weight: 400;
+                                cursor: pointer;
+                            }
+
+                            span {
+                                position: relative;
+                                display: block;
+                                padding: 0 10px 0 0;
+
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 0;
+                                    transform: translateY(-50%);
+                                    background: url('../img/arrow_down-black.svg') center center/cover no-repeat;
+                                    width: 7px;
+                                    height: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .header_social {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .social_item {
+                        a {
+                            display: block;
+                            margin-right: 10px;
+
+                        }
+
+                        &:last-child {
+                            a {
+                                margin: 0;
+                            }
+                        }
+                    }
+
+
+                }
+
+                .header_phone {
+                    display: block;
+                    position: relative;
+                    padding: 20px 35px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 10px;
+                        background: url('../img/tel.svg') center center/cover no-repeat;
+                        width: 21px;
+                        height: 21px;
+                        transform: translateY(-50%);
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 15px;
+                        background: url('../img/arrow_down.svg') center center/cover no-repeat;
+                        width: 9px;
+                        height: 5px;
+                        transform: translateY(-50%);
+                        cursor: pointer;
+                    }
+
+                    a {
+                        color: $Color_link;
+                        font-family: Inter;
+                        font-size: 20px;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+
+                    .header_phone-list {
+                        display: none;
+
+                    }
+
+                }
+
+                .phone_active {
+                    border-radius: 10px;
+                    outline: 1px solid #825231;
+                    background: #FFCB00;
+
+                    .header_phone-list {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        padding: 20px 35px;
+                        border-radius: 10px;
+                        border-radius: 10px;
+                        outline: 1px solid #825231;
+
+                        background: #FFE88F;
+
+                        a {
+                            display: block;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+                .header_language {
+                    display: block;
+                    position: relative;
+                    padding: 0 10px 0 10px;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: -5px;
+                        background: url('../img/arrow_down-black.svg') center center/cover no-repeat;
+                        width: 7px;
+                        height: 4px;
+                        transform: translateY(-50%);
+                    }
+
+                    .language_item {
+                        color: $Color_navMenu;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-weight: 500;
+                        cursor: pointer;
+
+                    }
+
+                    .language_list {
+                        display: none;
+
+                    }
+                }
+
+                .header_menu {
+                    display: none;
+                }
+
+                .language_active {
+                    .language_list {
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        border-radius: 10px;
+                        background: #FFE88F;
+
+                        .language_item {
+                            padding: 10px;
+
+                            &:hover {
+                                background: #F9ECB7;
+                                border-radius: 10px;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

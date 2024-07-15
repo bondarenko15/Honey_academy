@@ -1,0 +1,75 @@
+export default function initSlider() {
+    const sliderSwiper = document.querySelector('.main') || null;
+
+    if (sliderSwiper) {
+        const sliderOurTeam = document.querySelector('.our-team_swiper') || null;
+        if (sliderOurTeam) {
+            const slider = new Swiper(sliderOurTeam, {
+                slidesPerView: 2,
+                spaceBetween: 15,
+                loop: true,
+                navigation: {
+                    nextEl: '.our-team_swiper .swiper-button-next',
+                    prevEl: '.our-team_swiper .swiper-button-prev',
+                },
+                pagination: {
+                    el: ".our-team_swiper .swiper-pagination",
+                    dynamicBullets: true,
+                },
+                breakpoints: {
+                    648: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    }
+                }
+            });
+        }
+    }
+    const sliderReviews = document.querySelector('.reviews-slider') || null;
+    if (sliderReviews) {
+        const slider = new Swiper(sliderReviews, {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: '.reviews-slider .swiper-button-next',
+                prevEl: '.reviews-slider .swiper-button-prev',
+            },
+            pagination: {
+                el: ".reviews-slider .swiper-pagination",
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                648: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1366: {
+                    slidesPerView: 3,
+                    spaceBetween: 25,
+                }
+            }
+        });
+    }
+
+    const mySwiper = document.querySelector('.mySwiper') || null;
+    const mySwiper2 = document.querySelector('.mySwiper2') || null;
+    if (mySwiper || mySwiper2) {
+        const swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        const swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            thumbs: {
+                swiper: swiper
+            },
+        });
+    }
+};

@@ -1,0 +1,45 @@
+.title {
+    color: $Color_title;
+    text-align: center;
+    font-family: "Marck Script";
+    font-size: 34px;
+    font-weight: 400;
+    &_center {
+        margin: 0;
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 648px) {
+    .title {
+        font-size: 44px;
+        &_center {
+            font-size: 45px;
+        }
+    }
+}
+@media (min-width: 960px) {
+    .title {
+        font-size: 54px;
+        &_center {
+            font-size: 55px;
+        }
+    }
+}
+
+@media (min-width: 1366px) {
+    .title {
+        font-size: 60px;
+        
+    }
+}
+
+
+@media (min-width: 1880px) {
+    .title {
+        font-size: 64px;
+        &_center {
+            font-size: 65px;
+        }
+    }
+}
