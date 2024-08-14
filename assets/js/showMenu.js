@@ -16,7 +16,7 @@ export default function showMenu() {
         menuBtn.addEventListener('click', show)
 
         closeMenu.addEventListener('click', hide)
-        document.addEventListener('click', (event)=> {
+        document.addEventListener('click', (event) => {
             if (event.target == mobileMenu) {
                 hide();
             }

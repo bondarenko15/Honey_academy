@@ -11,27 +11,35 @@
                 margin-bottom: 40px;
                 position: relative;
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
+                justify-content: flex-start;
                 overflow: visible;
                 padding: 0 20px;
 
-                img {
-                    max-width: 140px;
-                    height: auto;
-                    display: block;
+                a {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    img {
+                        max-width: 140px;
+                        height: auto;
+                        display: block;
+                    }
+    
+                    p {
+                        color: $Color_white;
+                        text-align: center;
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-weight: 800;
+                        line-height: normal;
+                        min-width: 100px;
+                        max-width: 100px;
+                    }
                 }
 
-                p {
-                    color: $Color_white;
-                    text-align: center;
-                    font-family: Inter;
-                    font-size: 18px;
-                    font-weight: 800;
-                    line-height: normal;
-                    min-width: 100px;
-                    max-width: 100px;
-                }
+                
 
                 &::before {
                     content: '';
@@ -73,10 +81,12 @@
                     width: 49%;
                     border-radius: 20px;
 
-                    p {
-                        font-size: 20px;
-                        max-width: 135px;
-                        min-width: 120px;
+                    a {
+                        p {
+                            font-size: 20px;
+                            max-width: 135px;
+                            min-width: 120px;
+                        }
                     }
 
                     &::after {
@@ -102,10 +112,12 @@
                     border-radius: 20px;
                     padding: 10px 30px;
 
-                    p {
-                        font-size: 30px;
-                        max-width: 185px;
-                        min-width: 120px;
+                    a {
+                        p {
+                            font-size: 30px;
+                            max-width: 185px;
+                            min-width: 120px;
+                        }
                     }
 
                     &::after {
@@ -129,14 +141,16 @@
                     width: 32%;
                     padding: 10px 30px;
 
-                    p {
-                        font-size: 32px;
-                        max-width: 185px;
-                        min-width: 180px;
-                    }
-
-                    img {
-                        max-width: 185px;
+                    a {
+                        p {
+                            font-size: 32px;
+                            max-width: 185px;
+                            min-width: 180px;
+                        }
+    
+                        img {
+                            max-width: 185px;
+                        }
                     }
 
                     &::before {
@@ -147,6 +161,3 @@
         }
     }
 }
-
-
-

@@ -1,0 +1,206 @@
+.contacts_main {
+    padding: 120px 0 40px;
+
+    .container {
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+
+            .img {
+                width: 100%;
+                position: relative;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 50px;
+                padding: 30px 50px;
+
+                &::before {
+                    content: '';
+                    border-radius: 20px;
+                    position: absolute;
+                    inset: 0;
+                    background: $Color_yellow-bg;
+                    z-index: -1;
+                }
+
+                .img_main {
+                    max-height: 260px;
+                }
+
+                .item_1 {
+                    position: absolute;
+                    top: 10%;
+                    left: 10%;
+                }
+
+                .item_2 {
+                    position: absolute;
+                    bottom: 10%;
+                    left: 10%;
+                }
+
+                .item_3 {
+                    position: absolute;
+                    bottom: 15%;
+                    right: 10%;
+
+                }
+
+                .item_4 {
+                    position: absolute;
+                    bottom: 20%;
+                    left: 5%;
+                }
+
+            }
+        }
+    }
+}
+
+@media (min-width: 648px) {
+    .contacts_main {
+        padding: 135px 0 50px;
+
+        .container {
+            .wrapper {
+                .img {
+                    padding: 0;
+
+                    .img_main {
+                        max-height: 260px;
+                    }
+
+                    .item_1 {
+                        top: 20%;
+                        left: 15%;
+                    }
+
+                    .item_2 {
+                        bottom: 10%;
+                        left: 10%;
+                    }
+
+                    .item_3 {
+                        bottom: 35%;
+                        right: 10%;
+
+                    }
+
+                    .item_4 {
+                        bottom: 27%;
+                        left: 11%;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .contacts_main {
+        padding: 145px 0 60px;
+
+        .container {
+            .wrapper {
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: stretch;
+                gap: 20px;
+                flex-wrap: nowrap;
+
+                .block_form {
+                    width: calc(65% - 20px);
+                }
+
+                .img {
+                    width: 35%;
+
+                    .img_main {}
+
+                    .item_1 {
+                        top: 10%;
+                        left: 15%;
+                    }
+
+                    .item_2 {
+                        bottom: 10%;
+                        left: 10%;
+                    }
+
+                    .item_3 {
+                        bottom: 35%;
+                        right: 10%;
+
+                    }
+
+                    .item_4 {
+                        left: 50%;
+                        top: 20%;
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1366px) {
+    .contacts_main {
+        padding: 160px 0 60px;
+
+        .container {
+            .wrapper {
+                margin-top: 55px;
+                .block_form {
+                    width: calc(65% - 20px);
+                }
+
+                .img {
+                    width: 35%;
+                    margin: 0;
+
+                    .img_main {
+                        max-height: 330px;
+                    }
+
+                    .item_1 {
+                        top: 10%;
+                        left: 15%;
+                        width: 33px;
+                        height: 33px;
+                    }
+
+                    .item_2 {
+                        width: 32px;
+                        height: 40px;
+                    }
+
+                    .item_3 {
+                        bottom: 35%;
+                        right: 10%;
+                        width: 43px;
+                        height: 41px;
+
+                    }
+
+                    .item_4 {
+                        top: 7%;
+                        left: 50%;
+                        width: 197px;
+                        height: 142px;
+
+
+                    }
+
+                }
+            }
+        }
+    }
+}

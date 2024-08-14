@@ -1,0 +1,205 @@
+.services_mugs {
+    padding: 30px 0;
+
+    .container {
+        .items {
+            margin-top: 40px;
+
+            .item {
+                position: relative;
+                border-radius: 20px;
+                overflow: hidden;
+                padding: 15px;
+                margin-bottom: 20px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    z-index: -1;
+                    background: #FFCE01;
+                    box-shadow: 0px 1px 8px 0px rgba(207, 201, 221, 0.44);
+                }
+
+                &_img {
+                    img {
+                        width: -webkit-fill-available;
+                        border-radius: 20px;
+                        max-height: 135px;
+                    }
+                }
+
+                &_text {
+                    margin-top: 15px;
+
+                    .text_title {
+                        color: $Color_text;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-weight: 800;
+                    }
+
+                    .text_descr {
+                        display: block;
+                        color: $Color_text;
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-weight: 500;
+                        margin-top: 10px;
+                    }
+
+                    .age {
+                        display: block;
+                        color: $Color_text;
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-weight: 400;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 648px) {
+    .services_mugs {
+        padding: 45px 0;
+
+        .container {
+            .items {
+                margin-top: 60px;
+
+                .item {
+                    padding: 20px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: stretch;
+
+                    &_img {
+                        width: 200px;
+                        height: 135px;
+                        margin-right: 25px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            width: 200px;
+                            height: 135px;
+                            display: block;
+                            max-width: none;
+                        }
+                    }
+
+                    &_text {
+                        margin: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        .text_title {
+                            font-size: 20px;
+                        }
+
+                        .text_descr {
+                            font-size: 14px;
+                            margin-top: 0;
+                        }
+
+                        .age {
+                            font-size: 14px;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .services_mugs {
+        padding: 50px 0;
+
+        .container {
+            .items {
+                margin-top: 70px;
+
+                .item {
+                    &_img {
+                        width: 220px;
+                        height: 155px;
+                        margin-right: 30px;
+
+                        img {
+                            width: 220px;
+                            height: 155px;
+                            max-height: 155px;
+                        }
+                    }
+
+                    &_text {
+                        .text_title {
+                            font-size: 25px;
+                        }
+
+                        .text_descr {
+                            font-size: 16px;
+                        }
+
+                        .age {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1366px) {
+    .services_mugs {
+        padding: 60px 0;
+
+        .container {
+            .items {
+                display: flex;
+                justify-content: flex-start;
+                align-items: stretch;
+                flex-wrap: wrap;
+                gap: 30px 40px;
+                .item {
+                    width: calc(50% - 20px);
+                    margin: 0;
+                    &_img {
+                        width: 220px;
+                        height: 155px;
+                        margin-right: 30px;
+
+                        img {
+                            width: 220px;
+                            height: 155px;
+                            max-height: 155px;
+                        }
+                    }
+
+                    &_text {
+                        .text_title {
+                            font-size: 25px;
+                        }
+
+                        .text_descr {
+                            margin-top: 10px;
+                            font-size: 16px;
+                        }
+
+                        .age {
+                            margin-top: 10px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

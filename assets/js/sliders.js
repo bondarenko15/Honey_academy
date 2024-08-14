@@ -1,34 +1,31 @@
 export default function initSlider() {
-    const sliderSwiper = document.querySelector('.main') || null;
-
+    const sliderSwiper = document.querySelector('.our-team_swiper') || null;
     if (sliderSwiper) {
-        const sliderOurTeam = document.querySelector('.our-team_swiper') || null;
-        if (sliderOurTeam) {
-            const slider = new Swiper(sliderOurTeam, {
-                slidesPerView: 2,
-                spaceBetween: 15,
-                loop: true,
-                navigation: {
-                    nextEl: '.our-team_swiper .swiper-button-next',
-                    prevEl: '.our-team_swiper .swiper-button-prev',
+        const slider = new Swiper(sliderSwiper, {
+            slidesPerView: 2,
+            spaceBetween: 15,
+            loop: true,
+            navigation: {
+                nextEl: '.our-team_swiper .swiper-button-next',
+                prevEl: '.our-team_swiper .swiper-button-prev',
+            },
+            pagination: {
+                el: ".our-team_swiper .swiper-pagination",
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                648: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
                 },
-                pagination: {
-                    el: ".our-team_swiper .swiper-pagination",
-                    dynamicBullets: true,
-                },
-                breakpoints: {
-                    648: {
-                        slidesPerView: 3,
-                        spaceBetween: 20,
-                    },
-                    1024: {
-                        slidesPerView: 4,
-                        spaceBetween: 20,
-                    }
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
                 }
-            });
-        }
+            }
+        });
     }
+
     const sliderReviews = document.querySelector('.reviews-slider') || null;
     if (sliderReviews) {
         const slider = new Swiper(sliderReviews, {
@@ -70,6 +67,32 @@ export default function initSlider() {
             thumbs: {
                 swiper: swiper
             },
+        });
+    }
+
+
+    const currentOffers = document.querySelector('.current_offesr-slider') || null;
+    if (currentOffers) {
+        const slider = new Swiper(currentOffers, {
+            slidesPerView: "auto",
+            spaceBetween: 15,
+            loop: true,
+            navigation: {
+                nextEl: '.current_offesr-slider .swiper-button-next',
+                prevEl: '.current_offesr-slider .swiper-button-prev',
+            },
+            pagination: {
+                el: ".current_offesr-slider .swiper-pagination",
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                648: {
+                    spaceBetween: 20,
+                },
+                1366: {
+                    spaceBetween: 25,
+                }
+            }
         });
     }
 };

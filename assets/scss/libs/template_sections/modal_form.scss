@@ -1,0 +1,47 @@
+.modal_form {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    height: 100vh;
+    scale: 0;
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, .5);
+        z-index: -1;
+    }
+
+    .wrapper_form {
+        border-radius: 20px;
+        border: 1px solid $Color_yellow-bg;
+        background: $Color_white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        width: calc(100% - 40px);
+    }
+
+}
+.isShow {
+    display: block;
+    scale: 1;
+}
+@media (min-width: 648px) {
+    .modal_form {
+        .wrapper_form {
+            width: 530px;
+        }
+    
+    }
+}
+
+@media (min-width: 960px) {
+    .modal_form {
+        .wrapper_form {
+            width: 750px;
+        }
+    
+    }
+}

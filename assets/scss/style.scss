@@ -5,22 +5,26 @@
 
 @import "libs/template_elements/button";
 @import "libs/template_elements/title";
+@import "libs/template_elements/forms";
 @import "libs/template_elements/breadcrumbs";
 
 
 @import "libs/template_sections/mobile-menu";
-@import "libs/template_sections/main_services";
+@import "libs/template_sections/main_sections";
 @import "libs/template_sections/header";
 @import "libs/template_sections/footer";
 @import "libs/template_sections/video";
 @import "libs/template_sections/our-team";
 @import "libs/template_sections/reviews";
 @import "libs/template_sections/instagram";
+@import "libs/template_sections/modal_form";
 
 
 
 @import "libs/index/index";
+@import "libs/services/services";
 @import "libs/404/404";
+@import "libs/rates/rates";
 @import "libs/blog/blog";
 @import "libs/gallery/gallery";
 @import "libs/gallery_list/gallery_list";
@@ -28,6 +32,10 @@
 @import "libs/privacy_policy/privacy_policy";
 @import "libs/store/store";
 @import "libs/product_card/product_card";
+@import "libs/contacts/contacts";
+@import "libs/verification/verification";
+
+
 
 body {
     min-height: 100vh;
@@ -128,7 +136,6 @@ a {
     margin: 0 auto;
     position: relative;
     padding: 0 20px;
-    overflow: hidden;
 }   
 
 @media (min-width: 648px) {
@@ -153,5 +160,3 @@ a {
     }
 
 }
-
-

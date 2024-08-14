@@ -1,0 +1,129 @@
+.services_banner {
+    padding: 30px 0;
+    overflow: hidden;
+
+    .container {
+        .wrapper {
+            position: relative;
+            border-radius: 10px;
+            position: relative;
+            padding: 30px 30px 205px;
+            overflow: visible;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                z-index: -1;
+                border-radius: 10px;
+                background: radial-gradient(50% 50% at 50% 50%, #FFE472 0%, #FFCE00 100%);
+            }
+
+            .banner_title {
+                color: $Color_text;
+                font-family: Inter;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            img {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                max-height: 205px;
+
+            }
+        }
+    }
+}
+
+
+@media (min-width: 648px) {
+    .services_banner {
+        padding: 45px 0;
+
+        .container {
+            .wrapper {
+                border-radius: 20px;
+                padding: 70px 35px;
+
+                &::before {
+                    border-radius: 20px;
+                }
+
+                .banner_title {
+                    font-size: 24px;
+                    display: block;
+                    max-width: 300px;
+                }
+
+                img {
+                    right: -42px;
+                    max-height: 315px;
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .services_banner {
+        padding: 50px 0;
+
+        .container {
+            .wrapper {
+                padding: 50px 35px;
+
+                .banner_title {
+                    font-size: 28px;
+                    max-width: 390px;
+                }
+
+                img {
+                    right: -10px;
+                    max-height: 350px;
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1366px) {
+    .services_banner {
+        padding: 60px 0;
+
+        .container {
+            .wrapper {
+                padding: 70px 35px;
+
+                .banner_title {
+                    font-size: 32px;
+                    max-width: 700px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1880px) {
+    .services_banner {
+        padding: 130px 0 60px;
+        .container {
+            .wrapper {
+                padding: 100px 35px;
+
+                .banner_title {
+                    font-size: 36px;
+                    max-width: 900px;
+                }
+                img {
+                    max-height: 500px;
+                }
+            }
+        }
+    }
+}

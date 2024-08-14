@@ -1,27 +1,18 @@
 .video {
     padding: 0 20px;
-    .wrapper {
+    a {
         position: relative;
         min-height: 235px;
         border-radius: 10px;
-        .bg {
-            position: absolute;
-            inset: 0;
-            border-radius: 10px;
-            &::before {
-                content: '';
-                position: absolute;
-                inset: 0;
-                background: rgba(0, 0, 0, 0.22);
-                border-radius: 10px;
-            }
-        }
-        iframe {
+        overflow: hidden;
+        display: block;
+        position: relative;
+        img {
+            display: block;
+            height: 235px;
             width: 100%;
-            height: auto;
-            min-height: 235px;
-            border-radius: 10px;
         }
+
         #play {
             position: absolute;
             width: 54px;
@@ -37,10 +28,10 @@
 @media (min-width: 648px) {
     .video {
         padding: 0 40px;
-        .wrapper {
-            min-height: 350px;
-            iframe {
-                min-height: 350px;
+        a {
+            border-radius: 20px;
+            img {
+                height: 350px;
             }
         }
     }
@@ -49,10 +40,10 @@
 @media (min-width: 960px) {
     .video {
         padding: 0 40px;
-        .wrapper {
-            min-height: 480px;
-            iframe {
-                min-height: 480px;
+
+        a {
+            img {
+                height: 480px;
             }
         }
     }
@@ -61,14 +52,18 @@
 @media (min-width: 1366px) {
     .video {
         padding: 0 160px;
+
         .wrapper {
             min-height: 560px;
+
             .bg {
                 border-radius: 20px;
+
                 &::before {
                     border-radius: 20px;
                 }
             }
+
             iframe {
                 min-height: 560px;
                 border-radius: 20px;
@@ -80,8 +75,10 @@
 @media (min-width: 1880px) {
     .video {
         padding: 0 260px;
+
         .wrapper {
             min-height: 710px;
+
             iframe {
                 min-height: 710px;
             }

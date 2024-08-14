@@ -4,25 +4,62 @@
     font-family: "Marck Script";
     font-size: 34px;
     font-weight: 400;
+    margin: 0;
+
     &_center {
         margin: 0;
         font-size: 35px;
+    }
+    &_left {
+        text-align: left;
+    }
+    &_verification {
+        max-width: 230px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &-what_have {
+        width: 210px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 35px;
     }
 }
 
 @media (min-width: 648px) {
     .title {
         font-size: 44px;
+
         &_center {
             font-size: 45px;
         }
+
+        &_verification {
+            max-width: 500px;
+        }
+
+        &-what_have {
+            width: auto;
+            margin-bottom: 60px;
+        }
     }
 }
+
 @media (min-width: 960px) {
     .title {
         font-size: 54px;
+
         &_center {
             font-size: 55px;
+        }
+
+        &_verification {
+            max-width: 600px;
+        }
+
+        &-what_have {
+            margin-bottom: 70px;
         }
     }
 }
@@ -30,7 +67,13 @@
 @media (min-width: 1366px) {
     .title {
         font-size: 60px;
-        
+
+        &_verification {
+            max-width: 700px;
+        }
+        &_left {
+            max-width: 935px;
+        }
     }
 }
 
@@ -38,8 +81,13 @@
 @media (min-width: 1880px) {
     .title {
         font-size: 64px;
+
         &_center {
             font-size: 65px;
+        }
+
+        &_verification {
+            max-width: 800px;
         }
     }
 }

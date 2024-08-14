@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c">
   <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/fancybox.css">
 </head>
 
 <body>
   <!-- Header -->
-  <header class="header">
+  
+<header class="header">
     <div class="container">
         <div class="header_flex">
             <a href="javascript:void(0)" class="header_logo">
@@ -194,18 +196,117 @@
         </div>
     </div>
 </div>
-  <div class="main">
+  <div class="modal_form">
+    <div class="wrapper_form">
+        <form action="#" class="form_popUp form_base">
+            <span class="close"></span>
+            <h2 class="form_title">Опишитіть ваше запитання</h2>
+            <p class="form_descr">Залиште свої дані для оформлення замовлення і наш менеджер зв’яжеться з вами!</p>
+            <div class="inputs">
+                <div class="input">
+                    <input type="text" placeholder="Ваше ім’я">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Номер телефону">
+                </div>
+            </div>
+            <div class="textarea">
+                <textarea name="textarea" placeholder="Залиште коментар..."></textarea>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" class="custom-checkbox" id="checkbox_modal_1" name="checkbox_modal" value="yes">
+                <label class="checkbox_label-modal" for="checkbox_modal_1">Я погоджуюсь з умовами <a href="javascript:void(0)">політики конфіденційності</a> і
+                    дозволяю обробляти мої персональні дані</label>
+            </div>
+            <button class="btn btn_modal">Замовити</button>
+        </form>
+        <form action="#" class="form_popUp form_courses">
+            <span class="close"></span>
+            <h2 class="form_title">Офомрлення курсу</h2>
+            <span class="subtitle">Теорія, практика та індивідуальна підготовка до захисту проекту</span>
+            <p class="form_descr">Залиште свої дані для оформлення замовлення і наш менеджер зв’яжеться з вами!</p>
+            <div class="inputs">
+                <div class="input">
+                    <input type="text" placeholder="Ваше ім’я">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Номер телефону">
+                </div>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" class="custom-checkbox" id="checkbox_modal_2" name="checkbox_modal" value="yes">
+                <label class="checkbox_label-modal" for="checkbox_modal_2">Я погоджуюсь з умовами <a href="javascript:void(0)">політики конфіденційності</a> і
+                    дозволяю обробляти мої персональні дані</label>
+            </div>
+            <button class="btn btn_modal">Замовити</button>
+        </form>
+        <form action="#" class="form_popUp form_excursion">
+            <span class="close"></span>
+            <h2 class="form_title">Черновецький національний табор</h2>
+            <p class="form_descr">Залиште свої дані для оформлення замовлення і наш менеджер зв’яжеться з вами!</p>
+            <div class="inputs">
+                <div class="input">
+                    <input type="text" placeholder="Ваше ім’я">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Номер телефону">
+                </div>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" class="custom-checkbox" id="checkbox_modal_3" name="checkbox_modal" value="yes">
+                <label class="checkbox_label-modal" for="checkbox_modal_3">Я погоджуюсь з умовами <a href="javascript:void(0)">політики конфіденційності</a> і
+                    дозволяю обробляти мої персональні дані</label>
+            </div>
+            <button class="btn btn_modal">Замовити</button>
+        </form>
+        <form action="#" class="form_popUp form_buy">
+            <span class="close"></span>
+            <h2 class="form_title">Оформити замовлення</h2>
+            <p class="form_descr">Залиште свої дані для оформлення замовлення і наш менеджер зв’яжеться з вами!</p>
+            <div class="items_buy">
+                <div class="item">
+                    <div class="img">
+                        <img src="img/cup.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="descr">Чашка Honey Academy</p>
+                        <span class="price">250 ₴</span>
+                    </div>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="input">
+                    <input type="text" placeholder="Ваше ім’я">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Номер телефону">
+                </div>
+            </div>
+            <div class="textarea">
+                <textarea name="textarea" placeholder="Залиште коментар..."></textarea>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" class="custom-checkbox" id="checkbox_modal_4" name="checkbox_modal" value="yes">
+                <label class="checkbox_label-modal" for="checkbox_modal_4">Я погоджуюсь з умовами <a href="javascript:void(0)">політики конфіденційності</a> і
+                    дозволяю обробляти мої персональні дані</label>
+            </div>
+            <button class="btn btn_modal">Оформити замовлення</button>
+        </form>
+    </div>
+</div>
+  <section class="main">
     <div class="container">
         <h1 class="main_title">Якість навчання визначає <i>майбутнє</i></h1>
-        <p>Мета <i>“Honey Academy”</i> - створити простір, у якому діти зможуть здобувати знання та отримувати навички нового
+        <p>Мета <i>“Honey Academy”</i> - створити простір, у якому діти зможуть здобувати знання та отримувати навички
+            нового
             рівня.</p>
-        <button class="btn btn_main">Навчайтесь разом з нами</button>
+        <button class="btn btn_main btnPopUp btnBase">Навчайтесь разом з нами</button>
 
     </div>
     <img class="mobile" src="img/main_bg-mobile.png" alt="">
     <img class="desktop" src="img/main_bg-pc.png" alt="">
-</div>
-  <div class="our-values">
+</section>
+  <section class="our-values">
     <div class="container">
         <h2 class="title">Наші цінності:</h2>
         <ul class="our-values_items">
@@ -218,8 +319,8 @@
 
         </ul>
     </div>
-</div>
-  <div class="why-choose">
+</section>
+  <section class="why-choose">
     <div class="container">
         <h2 class="main-title">Чому обирають <i>“Honey Academy”?</i></h2>
         <ul class="why-choose_items">
@@ -251,61 +352,76 @@
     </div>
     <img class="top" src="img/why-choose.png" alt="">
     <img class="bottom" src="img/why-choose_bottom.png" alt="">
-</div>
-  <div class="services">
+</section>
+  <section class="services">
     <div class="container">
         <h2 class="title">Послуги</h2>
         <ul class="services_items">
             <li class="services_item">
-                <img src="img/services_1.png" alt="">
-                <p>Садок</p>
+                <a href="javascript:void(0)">
+                    <img src="img/services_1.png" alt="">
+                    <p>Садок</p>
+                </a>
             </li>
 
             <li class="services_item">
-                <img src="img/services_2.png" alt="">
-                <p>Музей дитинства</p>
+                <a href="javascript:void(0)">
+                    <img src="img/services_2.png" alt="">
+                    <p>Музей дитинства</p>
+                </a>
             </li>
             <li class="services_item">
-                <img src="img/services_3.png" alt="">
-                <p>Музична школа</p>
+                <a href="javascript:void(0)">
+                    <img src="img/services_3.png" alt="">
+                    <p>Музична школа</p>
+                </a>
             </li>
             <li class="services_item">
-                <img src="img/services_4.png" alt="">
-                <p>Додаткові посуги</p>
+                <a href="javascript:void(0)">
+                    <img src="img/services_4.png" alt="">
+                    <p>Додаткові посуги</p>
+                </a>
             </li>
             <li class="services_item">
-                <img src="img/services_5.png" alt="">
-                <p>Ліцей</p>
+                <a href="javascript:void(0)">
+                    <img src="img/services_5.png" alt="">
+                    <p>Ліцей</p>
+                </a>
             </li>
             <li class="services_item">
-                <img src="img/services_6.png" alt="">
-                <p>Kids MBA</p>
+                <a href="javascript:void(0)">
+                    <img src="img/services_6.png" alt="">
+                    <p>Kids MBA</p>
+                </a>
             </li>
             <li class="services_item">
-                <img src="img/services_7.png" alt="">
-                <p>Свята</p>
+                <a href="javascript:void(0)">
+                    <img src="img/services_7.png" alt="">
+                    <p>Свята</p>
+                </a>
             </li>
             <li class="services_item">
-                <img src="img/services_8.png" alt="">
-                <p>Табори</p>
+                <a href="javascript:void(0)">
+                    <img src="img/services_8.png" alt="">
+                    <p>Табори</p>
+                </a>
             </li>
             <li class="services_item">
-                <img src="img/services_9.png" alt="">
-                <p>Харчування</p>
+                <a href="javascript:void(0)">
+                    <img src="img/services_9.png" alt="">
+                    <p>Харчування</p>
+                </a>
             </li>
         </ul>
     </div>
-</div>
-  <div class="video">
-    <div class="wrapper">
-        <div id="player"></div>
-        <div class="bg" id="bg" style="background: url('img/video_bg.png') center center/cover no-repeat;"></div>
-        <div id="play" onclick="playVideo()">
-            <img src="img/play.svg" alt="play">
-        </div>
-    </div>
-</div>
-  <div class="our-team">
+</section>
+  <section class="video">
+    <a data-fancybox="" href="https://www.youtube.com/watch?v=wF8Xha6tkiA">
+        <img src="img/video_bg.png" alt="">
+        <img src="img/play.svg" alt="play" id="play">
+    </a>
+</section>
+  <section class="our-team">
     <h2 class="title">Наш колектив</h2>
     <div class="our-team_swiper">
         <div class="swiper-wrapper">
@@ -341,8 +457,8 @@
             
         </div>
     </div>
-</div>
-  <div class="reviews">
+</section>
+  <section class="reviews">
     <h2 class="title">Відгуки</h2>
     <div class="reviews-slider">
         <div class="swiper-wrapper">
@@ -408,16 +524,16 @@
     </div>
     <img class="top" src="img/why-choose.png" alt="">
     <img class="bottom" src="img/why-choose_bottom.png" alt="">
-</div>
-  <div class="instagram">
+</section>
+  <section class="instagram">
     <div class="container">
         <h2 class="title">Слідкуйте за Нами в Instagram</h2>
         <div class="instagram-block">
             <iframe src="" frameborder="0"></iframe>
         </div>
     </div>
-</div>
-  <div class="licenses">
+</section>
+  <section class="licenses">
     <div class="container">
         <h2 class="title">Ліцензії</h2>
         <ul class="licenses-items">
@@ -477,7 +593,7 @@
             </li>
         </ul>
     </div>
-</div>
+</section>
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -619,9 +735,12 @@
 </footer>
 
   <!-- Скрипты -->
+  <script src="js/fancybox.umd.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script type="module" src="js/script.min.js"></script>
   <script src="js/video.min.js"></script>
+  
+
 
 </body>
 

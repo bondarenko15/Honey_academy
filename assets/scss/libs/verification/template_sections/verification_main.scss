@@ -1,0 +1,569 @@
+.verification_main {
+    padding: 120px 0 40px;
+
+    .container {
+        .examination {
+            margin-top: 40px;
+            p {
+                color: $Color_dark-title;
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 400;
+                display: block;
+            }
+
+            .examination_form {
+                margin-top: 15px;
+
+                .input {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: stretch;
+
+                    span {
+                        color: $Color_dark-title;
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-weight: 400;
+                        border-radius: 5px 0 0 5px;
+                        background: $Color_nubmerBg;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 16px;
+                    }
+
+                    input {
+                        border: none;
+                        border-radius: 0 5px 5px 0;
+                        background: $Color_inputBg;
+                        display: block;
+                        width: 100%;
+                        padding: 18px 20px;
+                        color: $Color_dark-title;
+                        font-family: Inter;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .result {
+                margin-top: 30px;
+
+                .succes,
+                .failure {
+                    display: none;
+
+                    .block_result {
+                        border-radius: 20px;
+                        background: $Color_yellow-bg;
+                        padding: 20px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+
+                        img {
+                            display: block;
+                            margin-right: 10px;
+                            width: 33px;
+                            height: 35px;
+                        }
+
+                        .wrapper {
+                            .block_title {
+                                color: $Color_dark-title;
+                                font-family: Inter;
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+
+                            .block_descr {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+
+                    .certificate {
+                        margin-top: 30px;
+                        padding: 20px 30px;
+                        background: $Color_certificatrBg;
+                        border-radius: 20px;
+
+                        .certificate_wrapper {
+                            .certificate_text {
+                                .certificate_title {
+                                    color: $Color_dark-title;
+                                    font-family: Inter;
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                }
+
+                                .certificate_descr {
+                                    margin-top: 15px;
+                                }
+
+                                .certificate_block {
+                                    margin-top: 20px;
+
+                                    li {
+                                        color: $Color_dark-title;
+                                        font-family: Inter;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        display: block;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                            }
+
+                            .certificate_preview {
+                                margin-top: 20px;
+
+                                img {
+                                    display: block;
+                                    width: 168px;
+                                    height: 231px;
+                                }
+
+                                .download {
+                                    display: block;
+                                    margin-top: 15px;
+                                    color: $Color_btn;
+                                    font-family: Inter;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    text-decoration-line: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .succesShow,
+                .failureShow {
+                    display: block;
+                }
+            }
+
+            .descr {
+                color: $Color_dark-title;
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 400;
+                display: block;
+                margin-top: 30px;
+                line-height: 139.6%;
+
+                .underline {
+                    text-decoration: underline;
+                }
+
+                .strong {
+                    font-weight: 700;
+                }
+            }
+
+            .clarification {
+                background: $Color_inputBg;
+                position: relative;
+                color: $Color_dark-title;
+                ;
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 400;
+                padding: 20px;
+                margin-top: 30px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    width: 6px;
+                    background: #CBC7D2;
+                }
+            }
+
+            .verification_subtitle {
+                color: $Color_dark-title;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 700;
+                display: block;
+                margin-top: 30px;
+            }
+
+            .items {
+                margin-top: 20px;
+
+                .item {
+                    padding: 0 0 0 20px;
+                    position: relative;
+                    display: block;
+                    margin-bottom: 15px;
+                    color: $Color_dark-title;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-weight: 400;
+
+                    .underline {
+                        text-decoration: underline;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 6px;
+                        left: 10px;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50px;
+                        background: $Color_dark-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 648px) {
+    .verification_main {
+        padding: 135px 0 50px;
+
+        .container {
+            .examination {
+                margin-top: 50px;
+                p {
+                    font-size: 16px;
+                }
+
+                .examination_form {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: stretch;
+
+                    .input {
+                        margin-right: 20px;
+
+                        span {
+                            font-size: 20px;
+                        }
+
+                        input {
+                            width: 400px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .result {
+
+                    .succes,
+                    .failure {
+                        .block_result {
+                            padding: 30px;
+
+                            img {
+                                margin-right: 30px;
+                                width: 46px;
+                                height: 48px;
+                            }
+
+                            .wrapper {
+                                .block_title {
+                                    font-size: 20px;
+                                }
+
+                                .block_descr {
+                                    margin-top: 10px;
+
+                                }
+                            }
+                        }
+
+                        .certificate {
+                            padding: 40px 30px;
+
+                            .certificate_wrapper {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-start;
+
+                                .certificate_text {
+                                    width: 60%;
+
+                                    .certificate_title {
+                                        font-size: 20px;
+                                    }
+
+                                    .certificate_descr {
+                                        margin-top: 20px;
+                                    }
+
+                                    .certificate_block {
+
+                                        li {
+                                            font-size: 16px;
+                                            margin-bottom: 15px;
+                                        }
+                                    }
+                                }
+
+                                .certificate_preview {
+                                    margin: 0;
+
+                                    img {
+                                        width: 210px;
+                                        height: 290px;
+                                    }
+
+                                    .download {
+                                        font-size: 16px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .descr {
+                    font-size: 16px;
+                    margin-top: 35px;
+                }
+
+                .clarification {
+                    font-size: 16px;
+                    padding: 30px;
+                }
+
+                .verification_subtitle {
+                    font-size: 18px;
+                }
+
+                .items {
+                    .item {
+                        padding: 0 0 0 25px;
+                        font-size: 16px;
+                        &::before {
+                            top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .verification_main {
+        padding: 145px 0 60px;
+
+        .container {
+            .examination {
+                margin-top: 60px;
+                .examination_form {
+                    .input {
+                        span {
+                            font-size: 24px;
+                        }
+
+                        input {
+                            width: 500px;
+                        }
+                    }
+                }
+
+                .result {
+
+                    .succes,
+                    .failure {
+                        .block_result {
+                            padding: 35px;
+
+                            img {
+                                margin-right: 35px;
+                            }
+
+                            .wrapper {
+                                .block_descr {
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+
+                        .certificate {
+                            padding: 45px 35px;
+
+                            .certificate_wrapper {
+                                .certificate_text {
+                                    width: 60%;
+                                    .certificate_block {
+                                        margin-top: 40px;
+                                        li {
+                                            margin-bottom: 20px;
+                                        }
+                                    }
+                                }
+
+                                .certificate_preview {
+                                    margin: 0;
+
+                                    img {
+                                        width: 210px;
+                                        height: 290px;
+                                    }
+
+                                    .download {
+                                        font-size: 16px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .descr {
+                    font-size: 16px;
+                    margin-top: 35px;
+                }
+
+                .clarification {
+                    font-size: 16px;
+                    padding: 30px;
+                }
+
+                .verification_subtitle {
+                    font-size: 18px;
+                }
+
+                .items {
+                    .item {
+                        padding: 0 0 0 25px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1366px) {
+    .verification_main {
+        padding: 160px 0 60px;
+
+        .container {
+            .examination {
+                margin-top: 70px;
+                p {
+                    font-size: 18px;
+                }
+
+                .examination_form {
+                    margin-top: 25px;
+                    .input {
+                        margin-right: 40px;
+
+                        span {
+                            font-size: 24px;
+                        }
+
+                        input {
+                            width: 650px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                .result {
+                    max-width: 1100px;
+                    margin-top: 40px;
+                    .succes,
+                    .failure {
+                        .block_result {
+                            padding: 35px;
+
+                            img {
+                                margin-right: 35px;
+                            }
+
+                            .wrapper {
+                                .block_title {
+                                    font-size: 24px;
+                                }
+
+                                .block_descr {
+                                    font-size: 18px;
+
+                                }
+                            }
+                        }
+
+                        .certificate {
+                            padding: 45px 35px;
+
+                            .certificate_wrapper {
+
+                                .certificate_text {
+                                    width: 60%;
+
+                                    .certificate_title {
+                                        font-size: 24px;
+                                    }
+
+                                    .certificate_descr {
+                                        margin-top: 20px;
+                                        font-size: 18px;
+                                    }
+
+                                    .certificate_block {
+
+                                        li {
+                                            font-size: 18px;
+                                            margin-bottom: 15px;
+                                        }
+                                    }
+                                }
+
+                                .certificate_preview {
+                                    .download {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .descr {
+                    font-size: 18px;
+                    margin-top: 30px;
+                }
+
+                .clarification {
+                    font-size: 18px;
+                    max-width: 1100px;
+                }
+
+                .verification_subtitle {
+                    font-size: 20px;
+                }
+
+                .items {
+                    margin-top: 25px;
+                    .item {
+                        padding: 0 0 0 25px;
+                        font-size: 18px;
+                        &::before {
+                            top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
