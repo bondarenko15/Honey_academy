@@ -28,14 +28,7 @@
         display: block;
         width: 75%;
     }
-    .WidgetTitle__Header-sc-ruy1gu-2 {
-        color: $Color_title;
-        text-align: center;
-        font-family: "Marck Script";
-        font-size: 34px;
-        font-weight: 400;
-        margin: 0;
-    }
+    
 }
 
 @media (min-width: 648px) {
@@ -45,9 +38,7 @@
         .bottom {
             width: 40%;
         }
-        .WidgetTitle__Header-sc-ruy1gu-2 {
-            font-size: 44px;
-        }
+        
 
     }
 }
@@ -60,9 +51,7 @@
         .bottom {
             width: 40%;
         }
-        .WidgetTitle__Header-sc-ruy1gu-2 {
-            font-size: 54px;
-        }
+        
 
     }
 }
@@ -81,8 +70,6 @@
 
 @media (min-width: 1880px) {
     .reviews {
-        .WidgetTitle__Header-sc-ruy1gu-2 {
-            font-size: 64px;
-        }
+        
     }
 }

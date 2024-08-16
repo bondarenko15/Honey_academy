@@ -21,7 +21,7 @@ hideQuantity()
 
 ShowAndHide();
 
-const rates = document.querySelector('.rates_main') || null;
+const rates = document.querySelector('.rates_main') || document.querySelector('.services_rates') || null;
 if (rates) {
     const name = document.querySelector('.table_name').offsetWidth;
 
@@ -35,7 +35,6 @@ if (rates) {
     const optionsItems = document.querySelectorAll('.options_items');
     item.forEach((i) => {
         let valueWidth = i.offsetWidth;
-        console.log(valueWidth)
         itemOptions.forEach((a) => {
             a.style.width = (valueWidth * 2) + "px";
         })

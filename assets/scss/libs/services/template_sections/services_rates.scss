@@ -1,0 +1,664 @@
+.services_rates {
+    padding: 80px 0 40px;
+
+    .container {
+        .rates_wrapper {
+
+            .rates_info {
+                margin-top: 30px;
+
+                .subtitle {
+                    text-align: center;
+                    display: block;
+                    color: $Color_dark-title;
+                    text-align: center;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                .block_table {
+                    width: 100%;
+                    overflow-x: scroll;
+                    overflow-y: auto;
+                    -webkit-overflow-scrolling: touch;
+                    margin-top: 30px;
+
+                    .block_table_header {
+                        width: max-content;
+
+                        .title_header {
+                            border-radius: 10px;
+                            background: $Color_tabsActive;
+                            padding: 30px 20px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 310px;
+
+                            p {
+                                color: $Color_title;
+                                font-family: Inter;
+                                font-size: 16px;
+                                font-weight: 700;
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .block_table-options {
+                        margin: 10px 0 0;
+
+                        .options_items {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: stretch;
+                            margin-bottom: 10px;
+
+                            .item {
+                                padding: 10px 15px;
+                                border-radius: 15px;
+                                background: $Color_tabs;
+                                color: $Color_title;
+                                font-family: Inter;
+                                font-size: 12px;
+                                font-weight: 500;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                text-align: center;
+
+                                p {
+                                    display: block;
+                                    max-width: 60px;
+                                    text-align: center;
+                                    margin: 0 auto;
+                                }
+
+                            }
+
+                            .item_month {
+                                background: $Color_gren;
+                            }
+                        }
+                    }
+
+                    .table {
+                        border: 1px solid $Color_grey;
+                        border-collapse: collapse;
+
+                        tr {
+                            border: 1px solid $Color_grey;
+
+                            td {
+                                border: 1px solid $Color_grey;
+                                padding: 25px 30px;
+                                text-align: center;
+                                color: $Color_title;
+                                font-family: Inter;
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
+
+                            .table_value {
+                                p {
+                                    display: block;
+                                    min-width: 60px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .block_list {
+                    margin-top: 30px;
+
+                    .block_list-title {
+                        .title_header {
+                            border-radius: 10px;
+                            background: $Color_tabsActive;
+                            padding: 20px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            p {
+                                color: $Color_title;
+                                font-family: Inter;
+                                font-size: 16px;
+                                font-weight: 700;
+                            }
+                        }
+
+                        .item {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 15px 20px;
+
+                            p {
+                                display: block;
+                                max-width: 120px;
+                                color: $Color_title;
+                                font-family: Inter;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+                    }
+
+                    .block_list-items {
+                        .block_list-subtitle {
+                            border-radius: 10px;
+                            background: $Color_tabs;
+                            padding: 15px 0;
+                            text-align: center;
+
+                            p {
+                                color: $Color_title;
+                                font-family: Inter;
+                                font-size: 14px;
+                                font-weight: 700;
+                                display: block;
+                                text-align: center;
+                            }
+                        }
+
+                        .border {
+                            height: 1px;
+                            background: $Color_grey;
+                            display: block;
+                        }
+
+                        .item {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 15px 20px;
+
+                            p {
+                                display: block;
+                                max-width: 120px;
+                                color: $Color_title;
+                                font-family: Inter;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+
+                            }
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+    }
+
+
+}
+
+@media (min-width: 648px) {
+    .services_rates {
+        padding: 100px 0 50px;
+
+        .container {
+            .rates_wrapper {
+
+                .rates_info {
+                    margin-top: 70px;
+
+                    .subtitle {
+                        font-size: 22px;
+                    }
+
+                    .block_table {
+                        margin-top: 50px;
+
+                        .block_table_header {
+
+                            .title_header {
+                                border-radius: 15px;
+                                gap: 385px;
+
+                                p {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+
+                        .block_table-options {
+                            margin: 10px 0 0;
+
+                            .options_items {
+                                .item {
+                                    p {
+                                        max-width: 55px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .table {
+
+                            tr {
+
+                                td {
+                                    font-size: 16px;
+                                }
+
+                                .table_value {
+                                    p {
+                                        min-width: 80px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .block_list {
+                        margin-top: 50px;
+
+                        .block_list-title {
+                            .title_header {
+                                border-radius: 15px;
+                                padding: 20px 25px;
+
+                                p {
+                                    font-size: 18px;
+                                }
+                            }
+
+                            .item {
+                                padding: 20px 25px;
+
+                                p {
+                                    max-width: none;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+
+                        .block_list-items {
+                            .block_list-subtitle {
+                                border-radius: 15px;
+                                padding: 20px 0;
+
+                                p {
+                                    font-size: 16px;
+                                }
+                            }
+
+                            .item {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 20px 25px;
+
+                                p {
+                                    max-width: none;
+                                    font-size: 16px;
+
+                                }
+                            }
+                        }
+                    }
+
+
+
+                }
+            }
+        }
+
+
+    }
+}
+
+@media (min-width: 960px) {
+    .services_rates {
+        padding: 120px 0 60px;
+
+        .container {
+            .rates_wrapper {
+
+                .rates_info {
+                    margin-top: 60px;
+
+                    .subtitle {
+                        font-size: 28px;
+                    }
+
+                    .block_table {
+                        margin-top: 40px;
+                        overflow: visible;
+
+                        .block_table_header {
+                            width: 100%;
+
+                            .title_header {
+                                border-radius: 20px;
+
+                                gap: 20px;
+
+                                p {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+
+                        .block_table-options {
+                            margin: 10px 0 0;
+
+                            .options_items {
+                                .item {
+                                    p {
+                                        max-width: 55px;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .table {
+
+                            tr {
+
+                                td {
+                                    font-size: 18px;
+                                }
+
+                                .table_value {
+                                    padding: 20px 0;
+
+                                    p {
+                                        min-width: 120px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .block_list {
+                        margin-top: 50px;
+
+                        .block_list-title {
+                            .title_header {
+                                border-radius: 15px;
+                                padding: 20px 25px;
+
+                                p {
+                                    font-size: 18px;
+                                }
+                            }
+
+                            .item {
+                                padding: 20px 25px;
+
+                                p {
+                                    max-width: none;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+
+                        .block_list-items {
+                            .block_list-subtitle {
+                                border-radius: 15px;
+                                padding: 20px 0;
+
+                                p {
+                                    font-size: 16px;
+                                }
+                            }
+
+                            .item {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 20px 25px;
+
+                                p {
+                                    max-width: none;
+                                    font-size: 16px;
+
+                                }
+                            }
+                        }
+                    }
+
+
+
+                }
+            }
+        }
+
+
+    }
+}
+
+@media (min-width: 1366px) {
+    .services_rates {
+        padding: 160px 0 60px;
+
+        .container {
+            .rates_wrapper {
+
+                .rates_info {
+                    margin-top: 80px;
+                    padding: 0 100px;
+
+                    .subtitle {
+                        font-size: 30px;
+                    }
+
+                    .block_table {
+                        margin-top: 50px;
+
+                        .block_table_header {
+                            width: 100%;
+
+                            .title_header {
+                                padding: 20px 50px;
+
+                                p {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+
+                        .block_table-options {
+                            margin: 10px 0 0;
+
+                            .options_items {
+                                .item {
+                                    gap: 10px;
+                                    border-radius: 20px;
+
+                                    p {
+                                        max-width: 70px;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .table {
+                            width: 100%;
+
+                            tr {
+
+                                td {
+                                    font-size: 18px;
+                                }
+
+                                .table_value {
+                                    padding: 20px 0;
+
+                                    p {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .block_list {
+                        margin-top: 50px;
+
+                        .block_list-title {
+                            .title_header {
+                                border-radius: 20px;
+                                padding: 20px 50px;
+
+                                p {
+                                    font-size: 22px;
+                                }
+                            }
+
+                            .item {
+                                padding: 30px 25px;
+
+                                p {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+
+                        .block_list-items {
+                            .block_list-subtitle {
+                                border-radius: 20px;
+
+                                p {
+                                    font-size: 20px;
+                                }
+                            }
+
+                            .item {
+                                padding: 30px 25px;
+
+                                p {
+                                    font-size: 18px;
+
+                                }
+                            }
+                        }
+                    }
+
+
+
+                }
+            }
+        }
+
+
+    }
+}
+
+@media (min-width: 1880px) {
+    .ratesservices_rates_main {
+
+        .container {
+            .rates_wrapper {
+                .rates_info {
+                    margin-top: 100px;
+                    padding: 0 160px;
+
+                    .subtitle {
+                        font-size: 32px;
+                    }
+
+                    .block_table {
+                        margin-top: 60px;
+
+                        .block_table_header {
+                            width: 100%;
+
+                            .title_header {
+                                padding: 30px 70px;
+
+                                p {
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+
+                        .block_table-options {
+
+                            .options_items {
+                                .item {
+
+                                    p {
+                                        max-width: 70px;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .table {
+                            width: 100%;
+
+                            tr {
+
+                                td {
+                                    font-size: 20px;
+                                }
+
+                                .table_value {
+                                    padding: 20px 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .block_list {
+                        margin-top: 60px;
+
+                        .block_list-title {
+                            .title_header {
+                                padding: 30px 70px;
+
+                                p {
+                                    font-size: 24px;
+                                }
+                            }
+
+                            .item {
+                                padding: 30px 70px;
+
+                                p {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+
+                        .block_list-items {
+                            .block_list-subtitle {
+                                border-radius: 20px;
+
+                                p {
+                                    font-size: 20px;
+                                }
+                            }
+
+                            .item {
+                                padding: 30px 70px;
+
+                                p {
+                                    font-size: 20px;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}

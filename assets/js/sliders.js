@@ -1,4 +1,33 @@
 export default function initSlider() {
+    const servicesGallery = document.querySelector('.services_gallery_swiper') || null;
+    if (servicesGallery) {
+        const newSwiper = new Swiper(servicesGallery, {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: '.services_gallery_swiper .swiper-button-next',
+                prevEl: '.services_gallery_swiper .swiper-button-prev',
+            },
+            pagination: {
+                el: ".services_gallery_swiper .swiper-pagination",
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                648: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1366: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                }
+            }
+        });
+    }
+
+
+
     const sliderSwiper = document.querySelector('.our-team_swiper') || null;
     if (sliderSwiper) {
         const slider = new Swiper(sliderSwiper, {
@@ -97,30 +126,5 @@ export default function initSlider() {
     }
 
 
-    const servicesGallery = document.querySelector('.services_gallery_swiper') || null;
-    if (servicesGallery) {
-        const slider = new Swiper(servicesGallery, {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            navigation: {
-                nextEl: '.services_gallery_swiper .swiper-button-next',
-                prevEl: '.services_gallery_swiper .swiper-button-prev',
-            },
-            pagination: {
-                el: ".services_gallery_swiper .swiper-pagination",
-                dynamicBullets: true,
-            },
-            breakpoints: {
-                648: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                1366: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                }
-            }
-        });
-    }
+    
 };
