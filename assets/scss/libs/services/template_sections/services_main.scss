@@ -1,5 +1,5 @@
-.services_main {
-    padding: 100px 0 30px;
+.main_sections {
+    padding: 100px 0 0;
     position: relative;
 
     &::before {
@@ -40,8 +40,8 @@
 }
 
 @media (min-width: 648px) {
-    .services_main {
-        padding: 150px 0 45px;
+    .main_sections {
+        padding: 150px 0 100px;
         position: relative;
 
         .container {
@@ -70,8 +70,8 @@
 }
 
 @media (min-width: 960px) {
-    .services_main {
-        padding: 220px 0 50px;
+    .main_sections {
+        padding: 150px 0;
         .container {
             .main_title {
                 font-size: 64px;
@@ -87,8 +87,9 @@
 
 
 @media (min-width: 1366px) {
-    .services_main {
-        padding: 220px 0 60px;
+    .main_sections {
+        padding: 170px 0;
+
         .container {
             .main_title {
                 font-size: 76px;
@@ -104,8 +105,9 @@
 
 
 @media (min-width: 1880px) {
-    .services_main {
-        padding: 220px 0 60px;
+    .main_sections {
+        padding: 190px 0;
+
         .container {
             .main_title {
                 font-size: 96px;

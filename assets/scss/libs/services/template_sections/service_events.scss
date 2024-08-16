@@ -1,0 +1,33 @@
+.service_events {
+    padding: 30px 0;
+    .container {
+        .events_items {
+            .events_item {
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 20px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    background: $Color_yellow-bg;
+                    z-index: -1;
+                }
+                .img {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 10px;
+                    margin-right: 15px;
+                }
+                .text {
+                    display: block;
+                    max-width: 70%;
+                }
+            }
+        }
+    }
+}

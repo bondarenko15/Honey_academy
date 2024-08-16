@@ -1,2 +1,3 @@
-  Fancybox.bind('[data-fancybox]', {
-  }); 
+
+
+

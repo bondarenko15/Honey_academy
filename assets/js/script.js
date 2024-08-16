@@ -1,31 +1,10 @@
-/* const btnForm = document.querySelector('.btnPopUp');
-const modalPopUp = document.querySelector('.modal_form');
-const formPopUp = document.querySelector('.form_popUp');
-btnForm.addEventListener('click', () => {
-    modalPopUp.classList.add('isShow');
-    const examinationBtn = () => {
-        if (btnForm.classList.contains('btnBase')) {
-            formPopUp.classList.add('form_active');
-        } else if (btnForm.classList.contains('btnExcursion')) {
-            formPopUp.classList.add('form_active');
-        } else if (btnForm.classList.contains('btnBuy')) {
-            formPopUp.classList.add('form_active');
-        } else if (btnForm.classList.contains('btnCourses')) {
-            formPopUp.classList.add('form_active');
-        }
-    }
-    examinationBtn();
-
-}) */
-
- import initSlider from './sliders.min.js';
+import initSlider from './sliders.min.js';
 import showMenu from './showMenu.min.js';
 import headerFixed from './headerFixed.min.js';
 import langToggle from './langToggle.min.js';
 import mobileMenuToggle from './mobileMenuToggle.min.js';
 import hideQuantity from './hideQuantity.min.js';
 import ShowAndHide from './ShowAndHide.min.js';
-
 
 
 initSlider();
@@ -41,7 +20,6 @@ mobileMenuToggle();
 hideQuantity()
 
 ShowAndHide();
-
 
 const rates = document.querySelector('.rates_main') || null;
 if (rates) {
@@ -70,7 +48,8 @@ if (rates) {
 
     })
 };
-
+Fancybox.bind('[data-fancybox]', {
+});
 
 
 

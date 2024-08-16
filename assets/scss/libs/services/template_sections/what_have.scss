@@ -126,8 +126,7 @@
         padding: 60px 0;
         .container {
 
-            .items_1,
-            .items_2 {
+            .items_1 {
                 display: flex;
                 justify-content: flex-start;
                 align-items: stretch;
@@ -145,6 +144,12 @@
             }
             .items_1 {
                 margin-bottom: 45px;
+            }
+            .items_2 {
+                gap: 35px;
+                .item {
+                    width: calc(33% - 20px);
+                }
             }
         }
     }

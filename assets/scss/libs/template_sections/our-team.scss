@@ -37,6 +37,8 @@
                     font-size: 14px;
                     font-weight: 700;
                     line-height: normal;
+                    display: block;
+                    z-index: 2;
                 }
 
                 p {
@@ -48,6 +50,8 @@
                     font-size: 12px;
                     font-weight: 400;
                     line-height: normal;
+                    display: block;
+                    z-index: 2;
                 }
             }
         }
@@ -58,13 +62,12 @@
             align-items: center;
             margin: 40px auto 0;
             width: 240px;
-            height: 35px;
 
             .swiper-button-next {
                 position: static;
                 background: url('../img/arrow-slider.svg') center center/cover no-repeat;
-                width: 35px;
-                height: 35px;
+                width: 36px;
+                height: 36px;
                 transform: rotate(180deg);
                 align-items: center;
                 margin: 0;
@@ -77,8 +80,8 @@
             .swiper-button-prev {
                 position: static;
                 background: url('../img/arrow-slider.svg') center center/cover no-repeat;
-                width: 35px;
-                height: 35px;
+                width: 36px;
+                height: 36px;
                 align-items: center;
                 margin: 0;
 
