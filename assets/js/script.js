@@ -5,7 +5,10 @@ import langToggle from './langToggle.min.js';
 import mobileMenuToggle from './mobileMenuToggle.min.js';
 import hideQuantity from './hideQuantity.min.js';
 import ShowAndHide from './ShowAndHide.min.js';
-
+import ratesWidth from './ratesWidth.min.js';
+import videoFancyBox from './video.min.js';
+import validatejs from './validate.min.js';
+import openPopUP from './openPopUp.min.js';
 
 initSlider();
 
@@ -21,34 +24,14 @@ hideQuantity()
 
 ShowAndHide();
 
-const rates = document.querySelector('.rates_main') || document.querySelector('.services_rates') || null;
-if (rates) {
-    const name = document.querySelector('.table_name').offsetWidth;
+ratesWidth();
 
-    const tableOptions = document.querySelector('.block_table-options');
+videoFancyBox();
 
-    tableOptions.style.marginLeft = name + "px";
+openPopUP();
 
-    const item = document.querySelectorAll('.table_value');
-    const itemOptions = document.querySelectorAll('.options_items .item');
-    const itemOptionsMount = document.querySelectorAll('.options_items .item_month');
-    const optionsItems = document.querySelectorAll('.options_items');
-    item.forEach((i) => {
-        let valueWidth = i.offsetWidth;
-        itemOptions.forEach((a) => {
-            a.style.width = (valueWidth * 2) + "px";
-        })
-        itemOptionsMount.forEach((c) => {
-            c.style.width = valueWidth + "px";
-        })
-        optionsItems.forEach((b) => {
-            b.style.width = (valueWidth * 6) + "px";
-        })
+validatejs();
 
-    })
-};
-Fancybox.bind('[data-fancybox]', {
-});
 
 
 

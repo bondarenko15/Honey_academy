@@ -1,15 +1,17 @@
 .service_events {
-    padding: 30px 0;
+    padding: 30px 0 0;
+
     .container {
         .events_items {
+            margin-top: 40px;
+
             .events_item {
                 position: relative;
                 overflow: hidden;
                 border-radius: 10px;
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
                 padding: 20px;
+                margin-bottom: 20px;
+
                 &::before {
                     content: '';
                     position: absolute;
@@ -17,15 +19,145 @@
                     background: $Color_yellow-bg;
                     z-index: -1;
                 }
+
                 .img {
-                    width: 120px;
-                    height: 120px;
+                    width: 100%;
+                    height: 250px;
                     border-radius: 10px;
                     margin-right: 15px;
                 }
+
                 .text {
                     display: block;
-                    max-width: 70%;
+                    margin-top: 10px;
+                    color: $Color_text;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 648px) {
+    .service_events {
+        padding: 45px 0 0;
+
+        .container {
+            .events_items {
+                margin-top: 60px;
+
+                .events_item {
+                    border-radius: 20px;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    overflow: visible;
+                    margin-bottom: 50px;
+
+                    &:before {
+                        border-radius: 20px;
+
+                    }
+
+                    .img {
+                        width: 165px;
+                        flex: 0 0 auto;
+                        height: 125px;
+                        border-radius: 20px;
+                        margin: -50px 15px 0 0;
+                    }
+
+                    .text {
+                        margin: 0;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .service_events {
+        padding: 50px 0 0;
+
+        .container {
+            .events_items {
+                margin-top: 80px;
+
+                .events_item {
+                    margin-bottom: 60px;
+
+                    &:before {
+                        border-radius: 20px;
+
+                    }
+
+                    .img {
+                        width: 165px;
+                        flex: 0 0 auto;
+                        height: 125px;
+                        border-radius: 20px;
+                        margin: -50px 15px 0 0;
+                    }
+
+                    .text {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1366px) {
+    .service_events {
+        padding: 50px 0 0;
+
+        .container {
+            .events_items {
+                display: flex;
+                justify-content: flex-start;
+                align-items: stretch;
+                flex-wrap: wrap;
+                gap: 0 40px;
+                margin-top: 80px;
+
+                .events_item {
+                    margin-bottom: 60px;
+                    width: calc(50% - 20px);
+
+                    &:before {
+                        .img {
+                            width: 190px;
+                            height: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1880px) {
+    .service_events {
+        padding: 60px 0 0;
+
+        .container {
+            .events_items {
+                margin-top: 100px;
+                .events_item {
+                    &:before {
+                        .img {
+                            width: 250px;
+                            height: 180px;
+                        }
+                    }
                 }
             }
         }

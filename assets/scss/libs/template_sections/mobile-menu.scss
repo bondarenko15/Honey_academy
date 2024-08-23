@@ -1,30 +1,30 @@
 .mobile-menu {
-    position: fixed;
+    display: none;
+    position: absolute;
     top: -200vh;
     right: 0;
-    width: 100vw;
-    z-index: 10;
-    display: flex;
-    justify-content: flex-end;
+    width: 320px;
+    z-index: 106;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: $Color_white;
+        border: 1px solid $Color_yellow-bg;
+        z-index: -1;
+    }
 
     .wrapper {
-        position: relative;
-        width: 267px;
-        padding: 60px 20px 20px;
-        overflow-y: scroll;
+        padding: 30px 20px 20px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-
-        &::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: $Color_white;
-            border: 1px solid $Color_yellow-bg;
-            z-index: -1;
-        }
+        height: 100%;
 
         .close {
             position: absolute;
@@ -35,15 +35,30 @@
             background: url('../img/close.svg') center center/cover no-repeat;
         }
 
+        .logo_mobile {
+            width: 130px;
+            height: 46px;
+
+            img {
+                width: 130px;
+                height: 46px;
+            }
+        }
+
         .mobile-nav {
+            overflow-y: scroll;
+            max-height: 40vh;
+            width: 100%;
+            margin-top: 30px;
+
             .item {
-                margin-bottom: 20px;
+                margin-bottom: 25px;
 
                 a,
                 span {
                     color: $Color_navMenu;
                     font-family: Inter;
-                    font-size: 14px;
+                    font-size: 18px;
                     font-weight: 400;
 
                 }
@@ -51,6 +66,7 @@
                 span {
                     padding: 0 10px 0 0;
                     position: relative;
+
                     &::after {
                         content: '';
                         position: absolute;
@@ -68,19 +84,23 @@
                     padding: 0 10px;
 
                     li {
-                        margin-top: 10px;
+                        margin-top: 15px;
 
                         a {
                             color: $Color_navMenu;
                             font-family: Inter;
-                            font-size: 12px;
+                            font-size: 16px;
                             font-weight: 400;
-                            
+
                         }
                     }
                 }
 
-                .show {
+
+            }
+
+            .show {
+                .subitems {
                     display: block;
                 }
             }
@@ -111,9 +131,8 @@
                 span {
                     color: $Color_navMenu;
                     font-family: Inter;
-                    font-size: 14px;
+                    font-size: 16px;
                     font-weight: 500;
-                    
                     margin-bottom: 5px;
                 }
 
@@ -129,9 +148,9 @@
                     a {
                         color: $Color_navMenu;
                         font-family: Inter;
-                        font-size: 14px;
+                        font-size: 16px;
                         font-weight: 500;
-                        
+
                     }
                 }
             }
@@ -143,12 +162,13 @@
         }
 
         .contacts-phone {
+            margin: 20px 0 0;
             p {
                 color: $Color_navMenu;
                 font-family: Inter;
                 font-size: 12px;
                 font-weight: 400;
-                
+
             }
 
             .wrapper-phone {
@@ -156,10 +176,10 @@
                     color: $Color_link;
                     display: block;
                     font-family: Inter;
-                    font-size: 16px;
+                    font-size: 18px;
                     font-weight: 500;
-                    
-                    margin-top: 12px;
+
+                    margin-top: 15px;
                 }
             }
         }
@@ -180,12 +200,12 @@
                 align-items: center;
 
                 .item {
-                    margin: 10px 20px 0 0;
+                    margin: 15px 25px 0 0;
 
                     a {
                         img {
-                            width: 20px;
-                            height: 20px;
+                            width: 26px;
+                            height: 26px;
                         }
                     }
                 }
@@ -195,5 +215,7 @@
 }
 
 .menuShow {
+    display: block;
     top: 0;
+    position: fixed;
 }

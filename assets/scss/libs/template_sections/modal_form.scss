@@ -1,9 +1,10 @@
 .modal_form {
     position: fixed;
     inset: 0;
-    z-index: 10;
+    z-index: 1000;
     height: 100vh;
     scale: 0;
+
     &::before {
         content: '';
         position: absolute;
@@ -19,21 +20,85 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50% , -50%);
+        transform: translate(-50%, -50%);
         width: calc(100% - 40px);
     }
 
+    .modal_thanks {
+        display: none;
+        width: 335px;
+        height: 241px;
+        border-radius: 20px;
+        border: 1px solid $Color_yellow-bg;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #FFF;
+        padding: 60px;
+
+        .close {
+            position: absolute;
+            cursor: pointer;
+            top: 20px;
+            right: 20px;
+            width: 16px;
+            height: 16px;
+            background: url('../img/close.svg') center center/cover no-repeat;
+        }
+
+        span {
+            color: $Color_dark-title;
+            display: block;
+            text-align: center;
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-top: 15px;
+            display: block;
+            color: $Color_dark-title;
+            text-align: center;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
 }
+
 .isShow {
     display: block;
     scale: 1;
 }
+
 @media (min-width: 648px) {
     .modal_form {
         .wrapper_form {
             width: 530px;
         }
-    
+
+        .modal_thanks {
+            width: 452px;
+            height: 260px;
+
+            .close {
+                width: 19px;
+                height: 19px;
+            }
+
+            span {
+                font-size: 24px;
+            }
+
+            p {
+                margin-top: 20px;
+                font-size: 16px;
+            }
+        }
+
     }
 }
 
@@ -42,6 +107,24 @@
         .wrapper_form {
             width: 750px;
         }
-    
+
+        .modal_thanks {
+            width: 462px;
+            height: 277px;
+
+            .close {
+                width: 19px;
+                height: 19px;
+            }
+
+            span {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
     }
 }

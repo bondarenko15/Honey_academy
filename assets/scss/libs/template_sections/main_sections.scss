@@ -53,18 +53,7 @@
 
         .mobile {
             display: none;
-        }
 
-        .desktop {
-            display: block;
-            width: 100%;
-            max-width: 620px;
-            min-height: 260px;
-
-            height: auto;
-            position: absolute;
-            right: 0;
-            bottom: 0;
         }
     }
 }
@@ -72,6 +61,7 @@
 @media (min-width: 960px) {
     .main_sections {
         padding: 220px 0;
+
         .container {
             .main_title {
                 font-size: 64px;
@@ -79,9 +69,6 @@
             }
         }
 
-        .desktop {
-            max-width: 840px;
-        }
     }
 }
 
@@ -89,6 +76,7 @@
 @media (min-width: 1366px) {
     .main_sections {
         padding: 220px 0;
+
         .container {
             .main_title {
                 font-size: 76px;
@@ -96,9 +84,6 @@
             }
         }
 
-        .desktop {
-            max-width: 840px;
-        }
     }
 }
 
@@ -106,15 +91,12 @@
 @media (min-width: 1880px) {
     .main_sections {
         padding: 220px 0;
+
         .container {
             .main_title {
                 font-size: 96px;
 
             }
-        }
-
-        .desktop {
-            max-width: 1260px;
         }
     }
 }

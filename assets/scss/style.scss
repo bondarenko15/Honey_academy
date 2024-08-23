@@ -43,14 +43,14 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    
+
 }
 
 html {
     box-sizing: border-box;
     position: relative;
     height: 100%;
-    
+
 }
 
 * {
@@ -82,7 +82,7 @@ img {
     height: auto;
 }
 
-i{
+i {
     font-style: normal;
 }
 
@@ -100,11 +100,11 @@ input[type="submit"] {
 }
 
 input:not([type=checkbox]):not([type=radio]),
-textarea, 
+textarea,
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 button {
@@ -122,9 +122,9 @@ button {
     }
 }
 
-input{
-    -webkit-appearance: none;   
-    appearance: none;   
+input {
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 a {
@@ -136,7 +136,8 @@ a {
     margin: 0 auto;
     position: relative;
     padding: 0 20px;
-}   
+}
+
 .WidgetTitle__Header-sc-ruy1gu-2 {
     color: $Color_title;
     text-align: center;
@@ -146,36 +147,167 @@ a {
     margin: 0;
 }
 
+.eapps-instagram-feed-title {
+    color: $Color_title;
+    text-align: center;
+    font-family: "Marck Script";
+    font-size: 34px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 30px;
+}
+
+.mrg_top {
+    padding: 30px 0;
+}
+
 @media (min-width: 648px) {
 
     .container {
         padding: 0 40px;
     }
+
     .WidgetTitle__Header-sc-ruy1gu-2 {
         font-size: 44px;
     }
 
-}
-@media (min-width: 960px) {
-    .WidgetTitle__Header-sc-ruy1gu-2 {
-        font-size: 54px;
+    .eapps-instagram-feed-title {
+        padding: 0 0 60px;
+        font-size: 44px;
     }
 
+    .mrg_top {
+        padding: 45px 0;
+
+
+    }
+
+    @media (min-width: 960px) {
+        .WidgetTitle__Header-sc-ruy1gu-2 {
+            font-size: 54px;
+        }
+
+        .eapps-instagram-feed-title {
+            padding: 0 0 70px;
+            font-size: 54px;
+        }
+        
+
+    }
+
+    @media (min-width: 1366px) {
+
+        .container {
+            padding: 0 80px;
+        }
+
+        .eui-widget-title {
+            padding: 0 0 70px;
+        }
+        .mrg_top {
+            padding: 50px 0;
+        }
+
+    }
+
+    @media (min-width: 1880px) {
+
+        .container {
+            padding: 0 120px;
+        }
+
+        .WidgetTitle__Header-sc-ruy1gu-2 {
+            font-size: 64px;
+        }
+
+        .eapps-instagram-feed-title {
+            font-size: 64px;
+        }
+        .mrg_top {
+            padding: 60px 0;
+        }
+    }
 }
-@media (min-width: 1366px) {
+
+
+.eapps-instagram-feed-title {
+    color: $Color_title;
+    text-align: center;
+    font-family: "Marck Script";
+    font-size: 34px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 30px;
+}
+
+.mrg_top {
+    padding: 30px 0;
+}
+
+@media (min-width: 648px) {
 
     .container {
-        padding: 0 80px;
+        padding: 0 40px;
     }
 
-}
-@media (min-width: 1880px) {
-
-    .container {
-        padding: 0 120px;
-    }
     .WidgetTitle__Header-sc-ruy1gu-2 {
-        font-size: 64px;
+        font-size: 44px;
     }
 
+    .eapps-instagram-feed-title {
+        padding: 0 0 60px;
+        font-size: 44px;
+    }
+
+    .mrg_top {
+        padding: 45px 0;
+
+
+    }
+
+    @media (min-width: 960px) {
+        .WidgetTitle__Header-sc-ruy1gu-2 {
+            font-size: 54px;
+        }
+
+        .eapps-instagram-feed-title {
+            padding: 0 0 70px;
+            font-size: 54px;
+        }
+        
+
+    }
+
+    @media (min-width: 1366px) {
+
+        .container {
+            padding: 0 80px;
+        }
+
+        .eui-widget-title {
+            padding: 0 0 70px;
+        }
+        .mrg_top {
+            padding: 50px 0;
+        }
+
+    }
+
+    @media (min-width: 1880px) {
+
+        .container {
+            padding: 0 120px;
+        }
+
+        .WidgetTitle__Header-sc-ruy1gu-2 {
+            font-size: 64px;
+        }
+
+        .eapps-instagram-feed-title {
+            font-size: 64px;
+        }
+        .mrg_top {
+            padding: 60px 0;
+        }
+    }
 }

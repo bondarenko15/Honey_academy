@@ -29,7 +29,9 @@
             font-size: 14px;
             font-weight: 400;
         }
-
+        .error {
+            outline: 1px solid red;
+        }
         .form_textarea {
             border-radius: 5px;
             background: $Color_inputBg;
@@ -47,7 +49,6 @@
 
 .form_popUp {
     padding: 35px 20px;
-    display: none;
 
     .close {
         position: absolute;
@@ -88,7 +89,6 @@
 
     .items_buy {
         margin-top: 20px;
-
         .item {
             display: flex;
             justify-content: flex-start;
@@ -160,6 +160,9 @@
                 font-family: Inter;
                 font-size: 14px;
                 font-weight: 400;
+            }
+            .error {
+                outline: 1px solid red;
             }
         }
     }
@@ -264,10 +267,32 @@
         }
     }
 
+    .show {
+        display: block;
+    }
+
 }
-.form_active {
+
+.form_base {
+    display: none;
+}
+
+.form_courses {
+    display: none;
+}
+
+.form_excursion {
+    display: none;
+}
+
+.form_buy {
+    display: none;
+}
+
+.active {
     display: block;
 }
+
 
 @media (min-width: 648px) {
     .form {

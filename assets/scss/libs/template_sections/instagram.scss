@@ -1,97 +1,29 @@
-.instagram {
-    padding: 60px 0;
-
+.mrg_top {
     .es-widget {
-        .eapps-instagram-feed-container {
-            .eapps-instagram-feed-title-container {
-                .eui-widget-title {
-                    color: $Color_title;
-                    text-align: center;
-                    font-family: "Marck Script";
-                    font-size: 34px;
-                    font-weight: 400;
-                    margin: 0;
-                    padding: 0 0 30px;
-                }
-
-            }
-        }
+        margin-top: 30px;
     }
 }
 
 @media (min-width: 648px) {
-    .instagram {
-        padding: 90px 0;
-
-        .container {
-            .es-widget {
-                .eapps-instagram-feed-container {
-                    .eapps-instagram-feed-title-container {
-                        .eui-widget-title {
-                            padding: 0 0 60px;
-                            font-size: 44px;
-                        }
-                    }
-                }
-            }
+    .mrg_top {
+        .es-widget {
+            margin-top: 40px;
         }
     }
 }
 
 @media (min-width: 960px) {
-    .instagram {
-        padding: 100px 0;
-
-        .container {
-            .es-widget {
-                .eapps-instagram-feed-container {
-                    .eapps-instagram-feed-title-container {
-                        .eui-widget-title {
-                            padding: 0 0 70px;
-                            font-size: 54px;
-                        }
-
-                    }
-                }
-            }
+    .mrg_top {
+        .es-widget {
+            margin-top: 0px;
         }
     }
 }
 
 @media (min-width: 1366px) {
-    .instagram {
-        padding: 100px 0;
-
-        .container {
-            .es-widget {
-                .eapps-instagram-feed-container {
-                    .eapps-instagram-feed-title-container {
-                        .eui-widget-title {
-                            padding: 0 0 70px;
-                        }
-
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 1880px) {
-    .instagram {
-        padding: 120px 0;
-
-        .container {
-            .es-widget {
-                .eapps-instagram-feed-container {
-                    .eapps-instagram-feed-title-container {
-                        .eui-widget-title {
-                            font-size: 64px;
-                        }
-
-                    }
-                }
-            }
+    .mrg_top {
+        .es-widget {
+            margin-top: 50px;
         }
     }
 }

@@ -31,12 +31,6 @@
         height: auto;
 
     }
-
-    .desktop {
-        display: none;
-        width: 100%;
-        height: auto;
-    }
 }
 
 @media (min-width: 648px) {
@@ -56,11 +50,9 @@
         }
 
         .desktop {
+            z-index: -1;
             display: block;
-            width: 100%;
-            max-width: 620px;
-            min-height: 260px;
-
+            width: 60%;
             height: auto;
             position: absolute;
             right: 0;
@@ -75,12 +67,12 @@
         .container {
             .main_title {
                 font-size: 64px;
-
+                max-width: 500px;
             }
         }
 
         .desktop {
-            max-width: 840px;
+            max-width: 675px;
         }
     }
 }
@@ -93,12 +85,12 @@
         .container {
             .main_title {
                 font-size: 76px;
-
+                max-width: 600px;
             }
         }
 
         .desktop {
-            max-width: 840px;
+            max-width: 735px;
         }
     }
 }
@@ -111,12 +103,12 @@
         .container {
             .main_title {
                 font-size: 96px;
-
+                max-width: 750px;
             }
         }
 
         .desktop {
-            max-width: 1260px;
+            max-width: 1000px;
         }
     }
 }

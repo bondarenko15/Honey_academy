@@ -62,6 +62,7 @@
         padding: 12px 30px;
     }
     &_courses {
+        margin-top: 30px;
         padding: 15px 35px;
     }
 }
@@ -100,6 +101,9 @@
             padding: 15px 25px;
             margin-top: 30px;
         }
+        &_courses {
+            margin-top: 40px;
+        }
     }
 }
 
@@ -124,6 +128,9 @@
         &_banner {
             padding: 20px;
             margin-top: 50px;
+        }
+        &_courses {
+            margin-top: 30px;
         }
     }
 
@@ -161,6 +168,10 @@
         }
         &_services {
             padding: 20px;
+        }
+        &_courses {
+            margin-top: 50px;
+            padding: 15px 35px;
         }
 
     }

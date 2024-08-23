@@ -1,5 +1,5 @@
 .our-team {
-    padding: 60px 0;
+    padding: 30px 0;
 
     .our-team_swiper {
         margin: 40px 20px 0;
@@ -7,7 +7,7 @@
 
         .swiper-wrapper {
             .swiper-slide {
-                height: 200px;
+                height: 330px;
                 position: relative;
                 border-radius: 10px;
                 display: flex;
@@ -23,8 +23,8 @@
                     background: url('../img/our-team_bg.svg') center center/cover no-repeat;
                     bottom: -19px;
                     left: -25px;
-                    width: 199px;
-                    height: 112px;
+                    width: 326px;
+                    height: 136px;
                     z-index: 0;
                     filter: blur(15px);
                 }
@@ -122,7 +122,7 @@
 
 @media (min-width: 648px) {
     .our-team {
-        padding: 90px 0;
+        padding: 45px 0;
 
         .our-team_swiper {
             margin: 40px 40px 0;
@@ -130,11 +130,12 @@
 
             .swiper-wrapper {
                 .swiper-slide {
-                    height: 270px;
+                    height: 350px;
                     border-radius: 20px;
                     &::before {
-                        width: 290px;
-                        height: 167px;
+                        width: 345px;
+                        height: 187px;
+                
                     }
 
                     span {
@@ -143,7 +144,7 @@
 
                     p {
                         font-size: 16px;
-                        max-width: 140px;
+                        max-width: 230px;
                     }
                 }
             }
@@ -155,14 +156,14 @@
 
 @media (min-width: 960px) {
     .our-team {
-        padding: 100px 0;
+        padding: 50px 0;
 
         .our-team_swiper {
             margin: 50px 40px 0;
 
             .swiper-wrapper {
                 .swiper-slide {
-                    height: 300px;
+                    height: 370px;
                 }
             }
 
@@ -175,14 +176,13 @@
 
 @media (min-width: 1366px) {
     .our-team {
-        padding: 100px 0;
 
         .our-team_swiper {
             margin: 50px 80px 0;
 
             .swiper-wrapper {
                 .swiper-slide {
-                    height: 330px;
+                    height: 370px;
 
                     &::before {
 
@@ -207,7 +207,7 @@
 
 @media (min-width: 1880px) {
     .our-team {
-        padding: 120px 0;
+        padding: 60px;
 
         .our-team_swiper {
             margin: 50px 120px 0;

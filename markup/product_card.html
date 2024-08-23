@@ -11,8 +11,7 @@
 
 <body>
   <!-- Header -->
-  
-<header class="header">
+  <header class="header">
     <div class="container">
         <div class="header_flex">
             <a href="javascript:void(0)" class="header_logo">
@@ -27,50 +26,50 @@
                         <a href="javascript:void(0)">Про нас</a>
                     </li>
                     <li class="navigation_item">
-                       <span>Послуги</span>
-                       <ul class="nav_subitems">
-                        <li class="navigation_subitem">
-                            <a href="javascript:void(0)">test</a>
-                        </li>
-                        <li class="navigation_subitem">
-                            <a href="javascript:void(0)">test</a>
-                        </li>
-                        <li class="navigation_subitem">
-                            <a href="javascript:void(0)">test</a>
-                        </li>
-                        <li class="navigation_subitem">
-                            <a href="javascript:void(0)">test</a>
-                        </li>
-                       </ul>
+                        <span>Послуги</span>
+                        <ul class="nav_subitems">
+                            <li class="navigation_subitem">
+                                <a href="javascript:void(0)">Дитячий садок</a>
+                            </li>
+                            <li class="navigation_subitem">
+                                <a href="javascript:void(0)">Свята</a>
+                            </li>
+                            <li class="navigation_subitem">
+                                <a href="javascript:void(0)">Табори</a>
+                            </li>
+                            <li class="navigation_subitem">
+                                <a href="javascript:void(0)">Музична школа</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="navigation_item">
                         <span>Інтернет-магазин</span>
                         <ul class="nav_subitems">
                             <li class="navigation_subitem">
-                                <a href="javascript:void(0)">test</a>
+                                <a href="javascript:void(0)">test </a>
                             </li>
                             <li class="navigation_subitem">
                                 <a href="javascript:void(0)">test</a>
                             </li>
                         </ul>
-                     </li>
-                     <li class="navigation_item">
+                    </li>
+                    <li class="navigation_item">
                         <span>Освітній простір</span>
                         <ul class="nav_subitems">
                             <li class="navigation_subitem">
-                                <a href="javascript:void(0)">test</a>
+                                <a href="javascript:void(0)">Honey hub</a>
                             </li>
                             <li class="navigation_subitem">
-                                <a href="javascript:void(0)">test</a>
+                                <a href="javascript:void(0)">Перевірка сертефікату</a>
                             </li>
                         </ul>
-                     </li>
-                     <li class="navigation_item">
-                         <a href="javascript:void(0)">Блог</a>
-                     </li>
-                     <li class="navigation_item">
-                         <a href="javascript:void(0)">Контакти</a>
-                     </li>
+                    </li>
+                    <li class="navigation_item">
+                        <a href="javascript:void(0)">Блог</a>
+                    </li>
+                    <li class="navigation_item">
+                        <a href="javascript:void(0)">Контакти</a>
+                    </li>
                 </ul>
             </nav>
             <ul class="header_social">
@@ -90,13 +89,20 @@
                     </a>
                 </li>
             </ul>
-            <div class="header_phone ">
-                <a href="javascript:void(0)">093 826 06 99</a>
-                <div class="header_phone-list">
+            <ul class="header_phone">
+                <li class="phone_item phone_item_active active">
                     <a href="javascript:void(0)">093 826 06 99</a>
+                    <span class="arrow_down"></span>
+                </li>
+                <li class="phone_item">
                     <a href="javascript:void(0)">093 826 06 99</a>
-                </div>
-            </div>
+                </li>
+                <li class="phone_item">
+                    <a href="javascript:void(0)">093 826 06 99</a>
+                </li>
+
+
+            </ul>
             <ul class="header_language ">
                 <span class="language_item">UA</span>
                 <ul class="language_list">
@@ -118,75 +124,77 @@
   <!-- Основной контент -->
   <div class="modal_form">
     <div class="wrapper_form">
-        <form action="#" class="form_popUp form_base">
-            <span class="close"></span>
-            <h2 class="form_title">Опишитіть ваше запитання</h2>
-            <p class="form_descr">Залиште свої дані для оформлення замовлення і наш менеджер зв’яжеться з вами!</p>
-            <div class="inputs">
-                <div class="input">
-                    <input type="text" placeholder="Ваше ім’я">
-                </div>
-                <div class="input">
-                    <input type="text" placeholder="Номер телефону">
-                </div>
-            </div>
-            <div class="textarea">
-                <textarea name="textarea" placeholder="Залиште коментар..."></textarea>
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" class="custom-checkbox" id="checkbox_modal_1" name="checkbox_modal" value="yes">
-                <label class="checkbox_label-modal" for="checkbox_modal_1">Я погоджуюсь з умовами <a href="javascript:void(0)">політики конфіденційності</a> і
-                    дозволяю обробляти мої персональні дані</label>
-            </div>
-            <button class="btn btn_modal">Замовити</button>
-        </form>
-        <form action="#" class="form_popUp form_courses">
+        <form action="#" class="form form_popUp form_courses">
+            <input type="hidden" name="page_name" value="Next Gen MBA">
             <span class="close"></span>
             <h2 class="form_title">Офомрлення курсу</h2>
             <span class="subtitle">Теорія, практика та індивідуальна підготовка до захисту проекту</span>
-            <p class="form_descr">Залиште свої дані для оформлення замовлення і наш менеджер зв’яжеться з вами!</p>
+            <p class="form_descr">Залиште свої дані для оформлення курсу і наш менеджер зв’яжеться з вами!</p>
             <div class="inputs">
                 <div class="input">
-                    <input type="text" placeholder="Ваше ім’я">
+                    <input type="text" name="name" placeholder="Ваше ім’я">
                 </div>
                 <div class="input">
-                    <input type="text" placeholder="Номер телефону">
+                    <input type="text" name="number" placeholder="+38 (___) __ __ ___">
                 </div>
             </div>
             <div class="checkbox">
                 <input type="checkbox" class="custom-checkbox" id="checkbox_modal_2" name="checkbox_modal" value="yes">
-                <label class="checkbox_label-modal" for="checkbox_modal_2">Я погоджуюсь з умовами <a href="javascript:void(0)">політики конфіденційності</a> і
-                    дозволяю обробляти мої персональні дані</label>
+                <label class="checkbox_label-modal" for="checkbox_modal_2">Я погоджуюсь з умовами політики
+                    конфідеальності і дозволю обробляти мої персональні дані</label>
             </div>
-            <button class="btn btn_modal">Замовити</button>
+            <button class="btn btn_modal">ВІдправити</button>
         </form>
-        <form action="#" class="form_popUp form_excursion">
+        <form action="#" class="form form_popUp form_base">
+            <input type="hidden" name="page_name" value="Next Gen MBA">
             <span class="close"></span>
-            <h2 class="form_title">Черновецький національний табор</h2>
+            <h2 class="form_title">Отримати консультацію</h2>
+            <p class="form_descr">Залиште свої дані і наш менеджер зв’яжеться з вами найближчим часом!</p>
+            <div class="inputs">
+                <div class="input">
+                    <input type="text" name="name" placeholder="Ваше ім’я">
+                </div>
+                <div class="input">
+                    <input type="text" name="number" placeholder="+38 (___) __ __ ___">
+                </div>
+            </div>
+            <div class="textarea">
+                <textarea name="textarea" placeholder="Повідомлення"></textarea>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" class="custom-checkbox" id="checkbox_modal_1" name="checkbox_modal" value="yes">
+                <label class="checkbox_label-modal" for="checkbox_modal_1">Я погоджуюсь з умовами політики конфідеальності і дозволю обробляти мої персональні дані</label>
+            </div>
+            <button class="btn btn_modal">ВІдправити</button>
+        </form>
+        <form action="#" class="form form_popUp form_excursion">
+            <input type="hidden" name="page_name" value="Next Gen MBA">
+            <span class="close"></span>
+            <h2 class="form_title">Оформити запит на путівку!</h2>
             <p class="form_descr">Залиште свої дані для оформлення замовлення і наш менеджер зв’яжеться з вами!</p>
             <div class="inputs">
                 <div class="input">
-                    <input type="text" placeholder="Ваше ім’я">
+                    <input type="text" name="name" placeholder="Ваше ім’я">
                 </div>
                 <div class="input">
-                    <input type="text" placeholder="Номер телефону">
+                    <input type="text" name="number" placeholder="+38 (___) __ __ ___">
                 </div>
             </div>
             <div class="checkbox">
                 <input type="checkbox" class="custom-checkbox" id="checkbox_modal_3" name="checkbox_modal" value="yes">
-                <label class="checkbox_label-modal" for="checkbox_modal_3">Я погоджуюсь з умовами <a href="javascript:void(0)">політики конфіденційності</a> і
-                    дозволяю обробляти мої персональні дані</label>
+                <label class="checkbox_label-modal" for="checkbox_modal_3">Я погоджуюсь з умовами політики конфідеальності і дозволю обробляти мої персональні дані</label>
             </div>
-            <button class="btn btn_modal">Замовити</button>
+            <button class="btn btn_modal">Оформити запит на путівку!</button>
         </form>
-        <form action="#" class="form_popUp form_buy">
+        <form action="#" class="form form_popUp form_buy">
+            <input type="hidden" name="page_name" value="Next Gen MBA">
             <span class="close"></span>
-            <h2 class="form_title">Оформити замовлення</h2>
-            <p class="form_descr">Залиште свої дані для оформлення замовлення і наш менеджер зв’яжеться з вами!</p>
+            <h2 class="form_title">Офомрлення курсу</h2>
+            <p class="form_descr"></p>
             <div class="items_buy">
                 <div class="item">
                     <div class="img">
-                        <img src="img/cup.svg" alt="">
+                        <img src="https://honey-academy.artwebsol.com.ua/wp-content/themes/honey_academy/markup/img/cup.svg" alt="">
                     </div>
                     <div class="text">
                         <p class="descr">Чашка Honey Academy</p>
@@ -196,27 +204,34 @@
             </div>
             <div class="inputs">
                 <div class="input">
-                    <input type="text" placeholder="Ваше ім’я">
+                    <input type="text" name="name" placeholder="Ваше ім’я">
                 </div>
                 <div class="input">
-                    <input type="text" placeholder="Номер телефону">
+                    <input type="text" name="number" placeholder="+38 (___) __ __ ___">
                 </div>
             </div>
             <div class="textarea">
-                <textarea name="textarea" placeholder="Залиште коментар..."></textarea>
+                <textarea name="textarea" placeholder="Повідомлення"></textarea>
             </div>
             <div class="checkbox">
                 <input type="checkbox" class="custom-checkbox" id="checkbox_modal_4" name="checkbox_modal" value="yes">
-                <label class="checkbox_label-modal" for="checkbox_modal_4">Я погоджуюсь з умовами <a href="javascript:void(0)">політики конфіденційності</a> і
-                    дозволяю обробляти мої персональні дані</label>
+                <label class="checkbox_label-modal" for="checkbox_modal_4">Я погоджуюсь з умовами політики конфідеальності і дозволю обробляти мої персональні дані</label>
             </div>
-            <button class="btn btn_modal">Оформити замовлення</button>
+            <button class="btn btn_modal" type="submit"></button>
         </form>
+    </div>
+    <div class="modal_thanks">
+        <span class="close"></span>
+        <span>Дякую за замовлення</span>
+        <p>Наш менеджер зв’яжеться з вами найближчим часом!</p>
     </div>
 </div>
   <div class="mobile-menu">
     <div class="wrapper">
         <span class="close"></span>
+        <a href="javascript:void(0)" class="logo_mobile">
+            <img src="img/logo-black.svg" alt="">
+        </a>
         <ul class="mobile-nav">
             <li class="item">
                 <a href="javascript:void(0)">Головна</a>
