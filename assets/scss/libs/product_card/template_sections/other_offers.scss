@@ -15,63 +15,63 @@
                 font-weight: 600;
             }
 
-            .items {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-top: 30px;
-                gap: 15px;
+            .current_offesr-slider {
+                margin-top: 40px;
 
-                .item {
-                    width: 50%;
+                .swiper-wrapper {
+                    .swiper-slide {
+                        width: 50%;
 
-                    a {
-                        .img {
-                            position: relative;
-                            border-radius: 10px;
-                            overflow: hidden;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            padding: 15px 20px;
-                            img {
-                                width: auto;
-                                height: auto;
-                                max-height: 120px;
+                        a {
+                            .img {
+                                position: relative;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 15px 20px;
+
+                                img {
+                                    width: auto;
+                                    height: auto;
+                                    object-fit: cover;
+                                }
+
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    inset: 0;
+                                    background: $Grey_bg;
+                                    z-index: -1;
+                                }
                             }
 
-                            &::before {
-                                content: '';
-                                position: absolute;
-                                inset: 0;
-                                background: $Grey_bg;
-                                z-index: -1;
+                            .item_title {
+                                margin-top: 10px;
+                                color: $Color_dark-title;
+                                font-family: Inter;
+                                font-size: 12px;
+                                font-weight: 400;
+                                height: 34px;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
                             }
-                        }
 
-                        .item_title {
-                            margin-top: 10px;
-                            color: $Color_dark-title;
-                            font-family: Inter;
-                            font-size: 12px;
-                            font-weight: 400;
-                            height: 28px;
-                            display: -webkit-box;
-                            -webkit-line-clamp: 2;
-                            -webkit-box-orient: vertical;
-                            overflow: hidden;
-                        }
-
-                        .price {
-                            color: $Color_dark-title;
-                            font-family: Inter;
-                            font-size: 14px;
-                            font-weight: 600;
-                            margin-top: 20px;
+                            .price {
+                                color: $Color_dark-title;
+                                font-family: Inter;
+                                font-size: 14px;
+                                font-weight: 600;
+                                margin-top: 20px;
+                            }
                         }
                     }
                 }
             }
+
         }
     }
 }
@@ -88,35 +88,35 @@
                     font-size: 20px;
                 }
 
-                .items {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-top: 30px;
-                    gap: 15px;
+                .current_offesr-slider {
+                    margin-top: 50px;
 
-                    .item {
-                        width: 33%;
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            width: calc(33% - 11px);
 
-                        a {
-                            .img {
-                                border-radius: 20px;
-                                padding: 20px 30px;
-                                img {
-                                    width: auto;
-                                    height: auto;
-                                    max-height: 140px;
+                            a {
+                                .img {
+                                    border-radius: 20px;
+                                    padding: 20px 30px;
+
+                                    img {
+                                        width: auto;
+                                        height: auto;
+                                        max-height: 140px;
+                                    }
+                                }
+
+                                .item_title {
+                                    font-size: 14px;
+                                    height: 34px;
+                                }
+
+                                .price {
+                                    font-size: 16px;
                                 }
                             }
 
-                            .item_title {
-                                font-size: 14px;
-                                height: 34px;
-                            }
-
-                            .price {
-                                font-size: 16px;
-                            }
                         }
                     }
                 }
@@ -138,32 +138,34 @@
                     font-size: 30px;
                 }
 
-                .items {
+
+                .current_offesr-slider {
                     margin-top: 50px;
-                    gap: 20px;
 
-                    .item {
-                        width: 25%;
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            width: calc(25% - 19px);
 
-                        a {
-                            .img {
-                                border-radius: 20px;
+                            a {
+                                .img {
+                                    border-radius: 20px;
 
-                                img {
-                                    width: auto;
-                                    height: auto;
+                                    img {
+                                        width: auto;
+                                        height: auto;
+
+                                    }
+                                }
+
+                                .item_title {
+                                    font-size: 16px;
+                                    height: 45px;
 
                                 }
-                            }
 
-                            .item_title {
-                                font-size: 16px;
-                                height: 40px;
-
-                            }
-
-                            .price {
-                                font-size: 18px;
+                                .price {
+                                    font-size: 18px;
+                                }
                             }
                         }
                     }
@@ -173,7 +175,7 @@
     }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1880px) {
     .other_offers {
         padding: 0 0 100px;
 
@@ -199,7 +201,7 @@
                                     width: auto;
                                     height: auto;
                                     max-height: 220px;
-                                    
+
                                 }
                             }
 

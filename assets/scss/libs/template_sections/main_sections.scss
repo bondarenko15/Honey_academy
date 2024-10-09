@@ -50,7 +50,15 @@
 
             }
         }
-
+        .desktop {
+            position: absolute;
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            display: block;
+            width: 60%;
+            height: auto
+        }
         .mobile {
             display: none;
 
@@ -68,20 +76,25 @@
 
             }
         }
-
+        .desktop {
+            max-width: 50%;
+        }
     }
 }
 
 
 @media (min-width: 1366px) {
     .main_sections {
-        padding: 220px 0;
+        padding: 200px 0;
 
         .container {
             .main_title {
                 font-size: 76px;
 
             }
+        }
+        .desktop {
+            max-width: 50%;
         }
 
     }
@@ -90,13 +103,17 @@
 
 @media (min-width: 1880px) {
     .main_sections {
-        padding: 220px 0;
+        padding: 250px 0;
 
         .container {
             .main_title {
                 font-size: 96px;
 
             }
+        }
+        .desktop {
+            max-width: 50%;
+            
         }
     }
 }

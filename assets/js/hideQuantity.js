@@ -1,5 +1,5 @@
 export default function hideQuantity() {
-    const items = document.querySelectorAll('.hideQuantity .item') || null;
+   /*  const items = document.querySelectorAll('.hideQuantity .item') || null;
     const blogNews = document.querySelectorAll('.blog_news-more .item') || null;
     let newArray = Array.from(items || blogNews);
     var deleteItem = newArray;
@@ -14,7 +14,7 @@ export default function hideQuantity() {
     } 
      else if (window.innerWidth > 1365) {
         deleteItems(0, 9)
-    }
+    } */
 }
 
 

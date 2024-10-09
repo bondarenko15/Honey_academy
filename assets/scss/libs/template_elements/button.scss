@@ -22,7 +22,7 @@
     }
 
     &-store {
-        width: 335px;
+        width: 100%;
         box-shadow: 0px 4px 4px 0px rgba(221, 204, 191, 0.42);
         padding: 15px 0;
     }
@@ -35,6 +35,15 @@
     }
 
     &_form {
+        border-radius: 10px;
+        background: $Color_btn;
+        box-shadow: 0px 4px 4px 0px rgba(221, 204, 191, 0.42);
+        color: $Color_white;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        display: inline-block;
+        border: none;
         padding: 15px 45px;
         margin-top: 30px;
     }
@@ -54,16 +63,25 @@
         padding: 15px 20px;
         margin-top: 50px;
     }
+
     &_banner {
         padding: 15px 20px;
         margin-top: 20px;
     }
+
     &_card {
         padding: 12px 30px;
     }
+
     &_courses {
         margin-top: 30px;
         padding: 15px 35px;
+    }
+
+    &_thanks {
+        display: block;
+        padding: 20px 40px;
+        margin: 20px auto 0;
     }
 }
 
@@ -82,6 +100,7 @@
         }
 
         &_form {
+            font-size: 18px;
             padding: 15px 55px;
             margin: 0;
         }
@@ -94,15 +113,22 @@
         &_modal {
             padding: 15px 60px;
         }
+
         &_services {
             padding: 20px 25px;
         }
+
         &_banner {
             padding: 15px 25px;
             margin-top: 30px;
         }
+
         &_courses {
             margin-top: 40px;
+        }
+
+        &_thanks {
+            padding: 15px 35px;
         }
     }
 }
@@ -122,15 +148,23 @@
             padding: 18px 68px;
             margin: 20px 0 0;
         }
+
         &_services {
             padding: 20px 25px;
         }
+
         &_banner {
             padding: 20px;
             margin-top: 50px;
         }
+
         &_courses {
             margin-top: 30px;
+        }
+
+        &_thanks {
+            padding: 20px 40px;
+            margin: 25px auto 0;
         }
     }
 
@@ -166,9 +200,11 @@
             padding: 20px 74px;
             margin: 0;
         }
+
         &_services {
             padding: 20px;
         }
+
         &_courses {
             margin-top: 50px;
             padding: 15px 35px;

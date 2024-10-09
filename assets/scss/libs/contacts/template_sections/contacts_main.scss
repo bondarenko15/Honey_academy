@@ -3,6 +3,7 @@
 
     .container {
         .wrapper {
+            margin-top: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -68,9 +69,10 @@
 
         .container {
             .wrapper {
+                margin-top: 30px;
                 .img {
                     padding: 0;
-
+                    
                     .img_main {
                         max-height: 260px;
                     }
@@ -108,6 +110,7 @@
 
         .container {
             .wrapper {
+                margin-top: 40px;
                 flex-direction: row;
                 justify-content: flex-start;
                 align-items: stretch;
@@ -121,7 +124,7 @@
                 .img {
                     width: 35%;
 
-                    .img_main {}
+                    margin: 0;
 
                     .item_1 {
                         top: 10%;

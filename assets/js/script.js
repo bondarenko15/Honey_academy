@@ -6,9 +6,11 @@ import mobileMenuToggle from './mobileMenuToggle.min.js';
 import hideQuantity from './hideQuantity.min.js';
 import ShowAndHide from './ShowAndHide.min.js';
 import ratesWidth from './ratesWidth.min.js';
-import videoFancyBox from './video.min.js';
 import validatejs from './validate.min.js';
-import openPopUP from './openPopUp.min.js';
+import openPopUP from './openPopUp.min.js';+
+
+validatejs();
+
 
 initSlider();
 
@@ -26,15 +28,20 @@ ShowAndHide();
 
 ratesWidth();
 
-videoFancyBox();
-
 openPopUP();
 
-validatejs();
 
 
 
 
+
+
+const fancybox = document.querySelector('[data-fancybox]') || null;
+    if (fancybox) {
+        Fancybox.bind('[data-fancybox]', {
+            groupAll: true,
+        });
+    }
 
 
 

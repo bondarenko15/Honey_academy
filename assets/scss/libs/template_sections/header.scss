@@ -200,7 +200,9 @@
 
                     .social_item {
                         margin-right: 30px;
-
+                        &:last-child {
+                            margin: 0;
+                        }
                         a {
                             display: block;
 

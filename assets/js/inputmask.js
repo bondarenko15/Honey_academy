@@ -1,10 +1,4 @@
-/*!
- * dist/inputmask
- * https://github.com/RobinHerbots/Inputmask
- * Copyright (c) 2010 - 2024 Robin Herbots
- * Licensed under the MIT license
- * Version: 5.0.9-beta.62
- */
+
 !function(e, t) {
     if ("object" == typeof exports && "object" == typeof module) module.exports = t(); else if ("function" == typeof define && define.amd) define([], t); else {
         var n = t();

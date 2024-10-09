@@ -4,6 +4,7 @@
     .container {
         .examination {
             margin-top: 40px;
+
             p {
                 color: $Color_dark-title;
                 font-family: Inter;
@@ -162,13 +163,13 @@
                 .strong {
                     font-weight: 700;
                 }
+
             }
 
             .clarification {
                 background: $Color_inputBg;
                 position: relative;
                 color: $Color_dark-title;
-                ;
                 font-family: Inter;
                 font-size: 14px;
                 font-weight: 400;
@@ -224,6 +225,37 @@
                     }
                 }
             }
+
+            .sertificate_content {
+                p {
+                    margin-top: 15px;
+                }
+
+                ul {
+
+                    li {
+                        position: relative;
+                        display: block;
+                        color: $Color_dark-title;
+                        font-family: Inter;
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin-top: 15px;
+                        padding: 0 0 0 15px;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 8px;
+                            width: 5px;
+                            height: 5px;
+                            background-color: $Color_dark-title;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -235,6 +267,7 @@
         .container {
             .examination {
                 margin-top: 50px;
+
                 p {
                     font-size: 16px;
                 }
@@ -329,9 +362,11 @@
                         }
                     }
                 }
+
                 .descr {
                     font-size: 16px;
                     margin-top: 35px;
+
                 }
 
                 .clarification {
@@ -347,11 +382,30 @@
                     .item {
                         padding: 0 0 0 25px;
                         font-size: 16px;
+
                         &::before {
                             top: 8px;
                         }
                     }
                 }
+
+                .sertificate_content {
+                    p {
+                        margin-top: 30px;
+                    }
+
+                    ul {
+
+                        li {
+                            font-size: 16px;
+
+                            &::before {
+                                top: 10px;
+                            }
+                        }
+                    }
+                }
+
             }
         }
     }
@@ -364,6 +418,7 @@
         .container {
             .examination {
                 margin-top: 60px;
+
                 .examination_form {
                     .input {
                         span {
@@ -400,8 +455,10 @@
                             .certificate_wrapper {
                                 .certificate_text {
                                     width: 60%;
+
                                     .certificate_block {
                                         margin-top: 40px;
+
                                         li {
                                             margin-bottom: 20px;
                                         }
@@ -459,12 +516,30 @@
         .container {
             .examination {
                 margin-top: 70px;
+
                 p {
                     font-size: 18px;
                 }
+                .sertificate_content {
+                    p {
+                        margin-top: 40px;
+                    }
+                    ul {
 
+                        li {
+                            font-size: 18px;
+                            padding: 0 0 0 20px;
+                            &::before {
+                                top: 10px;
+                                width: 7px;
+                                height: 7px;
+                            }
+                        }
+                    }
+                }
                 .examination_form {
                     margin-top: 25px;
+
                     .input {
                         margin-right: 40px;
 
@@ -482,6 +557,7 @@
                 .result {
                     max-width: 1100px;
                     margin-top: 40px;
+
                     .succes,
                     .failure {
                         .block_result {
@@ -555,9 +631,11 @@
 
                 .items {
                     margin-top: 25px;
+
                     .item {
                         padding: 0 0 0 25px;
                         font-size: 18px;
+
                         &::before {
                             top: 8px;
                         }

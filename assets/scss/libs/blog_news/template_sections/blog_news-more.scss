@@ -58,14 +58,14 @@
             .wrapper {
                 .items {
                     display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-
+                    justify-content: flex-start;
+                    align-items: stretch;
+                    gap: 0 20px;
                     .item {
-                        width: 49%;
+                        width: calc(50% - 10px);
 
                         a {
-                            width: auto;
+                            width: 100%;
 
                             p {
                                 font-size: 18px;
@@ -105,8 +105,9 @@
             .wrapper {
                 .items {
                     margin-top: 50px;
+                    gap: 0 30px;
                     .item {
-                        width: 32%;
+                        width: calc(33% - 16px);
                         &:hover {
                             transform: scale(1.05);
                         }
@@ -133,7 +134,6 @@
                     .item {
                         a {
                             height: 422px;
-
                             p {
                                 font-size: 24px;
                             }

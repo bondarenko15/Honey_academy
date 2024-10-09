@@ -27,7 +27,7 @@
                     bottom: -8px;
                     left: 0;
                     background: url('../img/blue_line.svg') center center/cover no-repeat;
-                    width: 165px;
+                    animation: fadeIn .5s linear forwards;
                     height: 19px;
                 }
             }
@@ -148,7 +148,7 @@
 
 @media (min-width: 1366px) {
     .main {
-        padding: 220px 0 160px;
+        padding: 160px 0 160px;
 
         .container {
             .main_title {
@@ -184,7 +184,6 @@
         }
     }
 }
-
 
 @media (min-width: 1880px) {
     .main {

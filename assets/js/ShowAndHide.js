@@ -14,24 +14,42 @@ export default function ShowAndHide() {
 
 
     const btnToggle = document.querySelector('.arrow_down');
-    const phoneItem = document.querySelectorAll('.phone_item');
+    const phoneItems = document.querySelectorAll('.phone_item');
     const mobileNumber = document.querySelector('.header_phone');
     const wrapper = document.querySelector('body');
-    btnToggle.addEventListener('click', () => {
-        mobileNumber.classList.toggle('phone_active');
-        phoneItem.forEach((item) => {
-            item.classList.toggle('phone_item_active');
-            document.addEventListener('click', (e) => {
-                if (!mobileNumber.contains(e.target)) {
-                    item.classList.remove('phone_item_active');
-                    mobileNumber.classList.remove('phone_active');
-
-                }
+    if (phoneItems.length >= 2) {
+        btnToggle.addEventListener('click', () => {
+            mobileNumber.classList.toggle('phone_active');
+            phoneItems.forEach((item) => {
+                item.classList.toggle('phone_item_active');
             });
-        })
+        });
+        document.addEventListener('click', (e) => {
+            if (!mobileNumber.contains(e.target) && !btnToggle.contains(e.target)) {
+                phoneItems.forEach((item) => {
+                    item.classList.remove('phone_item_active');
+                });
+                mobileNumber.classList.remove('phone_active');
+            }
+        });
+    }
 
-    })
-
-
+    function updateForm() {
+        const firstSlideImg = document.querySelector('.mySwiper2 .swiper-slide img');
+        const formImg = document.querySelector('.form_buy .item .img img');
+        const productTitle = document.querySelector('.product_card-title');
+        const formDescr = document.querySelector('.form_buy .item .text .descr');
+        const priceNew = document.querySelector('.price_new');
+        const formPrice = document.querySelector('.form_buy .item .text .price');
+        if (firstSlideImg && formImg && productTitle && formDescr && priceNew && formPrice) {
+            formImg.src = firstSlideImg.src;
+            formDescr.textContent = productTitle.textContent;
+            formPrice.textContent = priceNew.textContent;
+        }
+    }
+    const btnBuy = document.querySelector('.btnBuy');
+    if (btnBuy) {
+        btnBuy.addEventListener('click', updateForm);
+    }
 
 }

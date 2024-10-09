@@ -63,16 +63,12 @@
 
 @media (min-width: 960px) {
     .main_sections {
-        padding: 150px 0;
+        padding: 220px 0;
         .container {
             .main_title {
                 font-size: 64px;
                 max-width: 500px;
             }
-        }
-
-        .desktop {
-            max-width: 675px;
         }
     }
 }
@@ -80,7 +76,7 @@
 
 @media (min-width: 1366px) {
     .main_sections {
-        padding: 170px 0;
+        padding: 200px 0;
 
         .container {
             .main_title {
@@ -89,26 +85,19 @@
             }
         }
 
-        .desktop {
-            max-width: 735px;
-        }
     }
 }
 
 
 @media (min-width: 1880px) {
     .main_sections {
-        padding: 190px 0;
+        padding: 250px 0;
 
         .container {
             .main_title {
                 font-size: 96px;
                 max-width: 750px;
             }
-        }
-
-        .desktop {
-            max-width: 1000px;
         }
     }
 }
