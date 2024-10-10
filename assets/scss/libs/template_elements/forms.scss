@@ -3,6 +3,7 @@
     box-shadow: 0px 1px 8px 0px rgba(207, 201, 221, 0.44);
     padding: 30px 20px;
     position: relative;
+
     .checkbox {
         position: relative;
         margin-top: 20px;
@@ -93,6 +94,7 @@
             color: red;
         }
     }
+
     &_title {
         color: $Color_dark-title;
         font-family: Inter;
@@ -140,7 +142,7 @@
             color: red;
         }
 
-        
+
     }
 }
 
@@ -191,7 +193,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
-
+            gap: 0 15px;
             .img {
                 position: relative;
                 width: 85px;
@@ -200,8 +202,7 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: 10px;
-                margin: 0 10px 0 0;
-
+                flex: 1 1 1 ;
                 &::before {
                     content: '';
                     position: absolute;
@@ -212,13 +213,19 @@
                 }
 
                 img {
-                   width: 100%;
-                   height: 100%;
-                   object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
 
             .text {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 10px 0;
+                width: 70%;
                 .descr {
                     color: $Color_dark-title;
                     font-family: Inter;
@@ -226,17 +233,40 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
+                    display: block;
+                    width: 100%;
                 }
 
                 .price {
                     display: block;
-                    margin-top: 10px;
                     color: $Color_dark-title;
                     font-family: Inter;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
+                    width: 50%;
+                }
+
+                .quantity {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                    gap: 0 5px;
+
+                    i {
+                        color: $Text_gray_medium;
+                        font-family: Inter;
+                        font-size: 10px;
+                        font-weight: 400;
+                    }
+                    p {
+                        color: $Color_dark-title;
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
                 }
             }
         }
@@ -406,7 +436,6 @@
             font-size: 20px;
 
         }
-
         &_wrapper {
             display: flex;
             justify-content: flex-start;
@@ -458,7 +487,6 @@
                 .img {
                     width: 92px;
                     height: 85px;
-                    margin: 0 15px 0 0;
                 }
 
                 .text {
@@ -467,8 +495,15 @@
                     }
 
                     .price {
-                        margin-top: 10px;
                         font-size: 16px;
+                    }
+                    .quantity {
+                        i {
+                            font-size: 12px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
                     }
                 }
             }
@@ -553,17 +588,31 @@
                 .img {
                     width: 106px;
                     height: 98px;
-                    margin: 0 20px 0 0;
+                    flex-shrink: 0;
+                    img {
+                        flex-shrink: 0;
+                    }
                 }
 
                 .text {
+                    width: 100%;
                     .descr {
                         font-size: 18px;
                     }
 
                     .price {
-                        margin-top: 15px;
                         font-size: 18px;
+                    }
+                    .quantity {
+                        width: 50%;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        i {
+                            font-size: 14px; 
+                        }
+                        p {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
@@ -608,6 +657,7 @@
 @media (min-width: 1366px) {
     .form {
         padding: 50px 30px;
+
         .checkbox {
             .custom-checkbox+label::before {
                 top: -1px;
@@ -617,6 +667,7 @@
                 top: 3px;
             }
         }
+
         &_title {
             font-size: 26px;
 
@@ -636,9 +687,9 @@
                 min-height: 120px;
             }
 
-            
 
-            
+
+
         }
     }
 }

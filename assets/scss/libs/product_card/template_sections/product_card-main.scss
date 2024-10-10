@@ -1,5 +1,5 @@
 .product_card-main {
-    padding: 120px 0 40px;
+    padding: 100px 0 40px;
 
     .container {
         .wrapper {
@@ -105,7 +105,99 @@
                         background: $Color_yellow-bg;
                     }
                 }
+                .counter {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 30px;
+                    p {
+                        color: $Color_dark-title;
+                        font-family: Inter;
+                        font-size: 14px;
+                        font-weight: 500;
+                        display: block;
+                        width: 100%;
+                    }
 
+                    .counter_wrapper {
+                        display: inline-flex;
+                        justify-content: flex-start;
+                        align-items: stretch;
+                        width: 128px;
+                        margin-top: 10px;
+                        height: 45px;
+
+                        .counter_button {
+                            padding: 10px 15px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 3px;
+                            background: $Color_white_light;
+                            font-weight: 600;
+                            cursor: pointer;
+                        }
+
+                        .counter_button-minus {
+                            border-left: none;
+                        }
+
+                        .disabled {
+                            color: $Color_grey_dark;
+                            cursor: default;
+                        }
+
+                        .counter_input {
+                            flex: 0 0 45px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            input {
+                                width: 100%;
+                                height: 100%;
+                                border: none;
+                                text-align: center;
+                                background: $Color_white;
+                                border: 1px solid $Color_white_light;
+                            }
+                        }
+                    }
+
+                }
+                .product_card-info {
+                    margin-top: 30px;
+
+                    .item {
+                        padding: 15px 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        .strong {
+                            display: block;
+                            width: 35%;
+                            color: $Color_title;
+                            font-family: Inter;
+                            font-size: 12px;
+                            font-weight: 600;
+                            margin-right: 15px;
+                        }
+
+                        p {
+                            display: block;
+                            width: 55%;
+                            color: $Color_title;
+                            font-family: Inter;
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+                    }
+
+                    .grey {
+                        border-radius: 10px;
+                        background: $Grey_bg;
+                    }
+                }
                 .product_card-info {
                     margin-top: 30px;
 
@@ -150,7 +242,7 @@
                 color: $Color_dark-title;
                 font-family: Inter;
                 font-size: 18px;
-                font-weight: 400;
+                font-weight: 600;
             }
 
             .descr_text {
@@ -167,7 +259,7 @@
 
 @media (min-width: 648px) {
     .product_card-main {
-        padding: 135px 0 50px;
+        padding: 110px 0 50px;
 
         .container {
             .wrapper {
@@ -216,7 +308,11 @@
                             font-size: 14px;
                         }
                     }
-
+                    .counter {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
                     .product_card-info {
                         .item {
                             .strong {
@@ -248,7 +344,7 @@
 
 @media (min-width: 960px) {
     .product_card-main {
-        padding: 145px 0 60px;
+        padding: 120px 0 60px;
 
         .container {
             .wrapper {
@@ -306,7 +402,7 @@
                             font-size: 16px;
                         }
                     }
-
+                   
                     .product_card-info {
                         margin-top: 70px;
 

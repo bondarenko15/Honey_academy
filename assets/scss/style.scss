@@ -145,7 +145,7 @@ a {
         font-weight: 400;
         line-height: 139.6%;
         display: block;
-       
+
 
         em {
             text-decoration: underline;
@@ -168,7 +168,7 @@ a {
         margin-top: 20px;
     }
 
-    
+
 }
 
 .WidgetTitle__Header-sc-ruy1gu-2 {
@@ -194,6 +194,13 @@ a {
     padding: 30px 0;
 }
 
+.rngst_phone_button {
+    bottom: calc(1% - 11.25px) !important; 
+    right: calc(1% - 0.75px) !important;
+}
+
+
+
 @media (min-width: 648px) {
 
     .container {
@@ -201,7 +208,7 @@ a {
 
         p {
             font-size: 16px;
-           
+
         }
 
         h3,
@@ -212,7 +219,7 @@ a {
             margin-top: 30px;
         }
 
-        
+
     }
 
     .WidgetTitle__Header-sc-ruy1gu-2 {
@@ -249,7 +256,7 @@ a {
 
             p {
                 font-size: 18px;
-                
+
             }
 
             h3,
@@ -260,7 +267,7 @@ a {
                 margin-top: 40px;
             }
 
-            
+
         }
 
         .eui-widget-title {

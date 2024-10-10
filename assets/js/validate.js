@@ -18,6 +18,26 @@ export default function validatejs() {
                 const titleCourses = form.querySelector('.form_courses  .subtitle') || null;
                 const titleOffers = form.querySelector('.form_excursion .form_title') || null;
                 const formCourses = document.querySelector('.form_courses') || null;
+                const formBuy = document.querySelector('.form_buy') || null;
+                let productItemStr = '';
+                if (formBuy) {
+                    const buyButton = document.querySelector('.btnBuy') || null;
+                    const productItem = document.querySelector('.product_card-main') || null;
+                    if (productItem) {
+
+
+                        buyButton.addEventListener('click', function () {
+                            const activeTab = productItem.querySelector('.product_card-tabs .item-active');
+
+                            productItemStr = `
+Товар: ${productItem.querySelector('.product_card-text .product_card-title')?.innerText || 'Не вказано'}
+Ціна: ${productItem.querySelector('.product_card-text .price')?.innerText || 'Не вказано'}
+Модель: ${activeTab ? activeTab.innerText : 'Не вказано'}
+`;
+                        });
+                    }
+                }
+
                 if (formCourses) {
                     const coursesButtons = document.querySelectorAll('.btn_courses') || null;
                     coursesButtons.forEach(button => {
@@ -28,8 +48,8 @@ export default function validatejs() {
                         });
                     });
                 }
-                
 
+                console.log(productItemStr);
                 const formExcursion = document.querySelector('.form_excursion') || null;
                 if (formExcursion) {
                     const buttons = document.querySelectorAll('.swiper-slide .btn_card');
@@ -74,19 +94,22 @@ export default function validatejs() {
                 formInstanceData.append('action', 'contact_form');
 
 
-                if (form) {
+                /* if (form) {
                     let selector = document.querySelectorAll('[name="number"]');
                     selector.forEach((item) => {
                         let im = new Inputmask("+38 (999)9999999");
                         im.mask(item);
                     })
 
-                }
+                } */
                 form.addEventListener('submit', (e) => {
                     e.preventDefault();
                     let errorsMarker = [];
-                    let nameFieldVal, phoneFieldVal, msgFieldVal, emailFieldVal, refererFieldVal, packageFieldVal, offerFieldVal 
+                    let nameFieldVal, phoneFieldVal, msgFieldVal, emailFieldVal, refererFieldVal, packageFieldVal, offerFieldVal
 
+                    if (formBuy) {
+
+                    }
 
                     if (contact_name) {
                         nameFieldVal = contact_name.value;
@@ -167,18 +190,9 @@ export default function validatejs() {
                     }
 
                     if (titleOffers) {
-                        packageFieldVal = titleCourses.textContent;
+                        offerFieldVal = titleOffers.textContent;
                         formInstanceData.set('offer', offerFieldVal);
                     }
-                    /* if (formExcursion) {
-                        offerFieldVal = offerVal;
-                        formInstanceData.set('offer', offerFieldVal);
-                    }
-
-                    if (formCourses) {
-                        packageFieldVal = packageVal;
-                        formInstanceData.set('packege', packageFieldVal);
-                    } */
 
                     if (!validateCheckbox(checkbox, checkboxLabel)) {
                         errorsMarker.push('has_error');
@@ -192,11 +206,21 @@ export default function validatejs() {
                         data['page_referer'] = refererFieldVal;
                         data['offer'] = offerFieldVal;
                         data['package'] = packageFieldVal;
+                        data['goods'] = productItemStr;
 
 
-                        let message = `---------------------------\n\rЗаявка прийшла з: ${refererFieldVal ? refererFieldVal : 'Не вказано'} \n\rІм'я користувача:  ${nameFieldVal ? nameFieldVal : 'Не вказано'}  \n\rТелефон користувача:  ${phoneFieldVal ? phoneFieldVal : 'Не вказано'}  \n\rEmail:  ${emailFieldVal ? emailFieldVal : 'Не вказано'}  \n\rПовідомлення користувача: ${msgFieldVal ? msgFieldVal : 'Не вказано'}  \n\rОформлений курс: ${packageFieldVal ? packageFieldVal : 'Не вказано'}  \n\rЗаявка на табір: ${offerFieldVal ? offerFieldVal : 'Не вказано'}  \n\r---------------------------`
+                        let message = `---------------------------\n\rЗаявка прийшла з: ${refererFieldVal ? refererFieldVal : 'Не вказано'} \n\rІм'я користувача: ${nameFieldVal ? nameFieldVal : 'Не вказано'}  \n\rТелефон користувача: ${phoneFieldVal ? phoneFieldVal : 'Не вказано'}  \n\rEmail: ${emailFieldVal ? emailFieldVal : 'Не вказано'}  \n\rПовідомлення користувача: ${msgFieldVal ? msgFieldVal : 'Не вказано'}`;
 
-
+                        if (formCourses.classList.contains('active')) {
+                            message += `\n\rОформлений курс: ${packageFieldVal ? packageFieldVal : 'Не вказано'}`;
+                        }
+                        if (formExcursion.classList.contains('active')) {
+                            message += `\n\rЗаявка на табір: ${offerFieldVal ? offerFieldVal : 'Не вказано'}`;
+                        }
+                        if (formBuy.classList.contains('active')) {
+                            message += productItemStr;
+                        }
+                        message += `\n\r---------------------------`;
                         sendMessageToTelegram(token, chatId, message);
 
                         sendForm(
@@ -338,7 +362,9 @@ const sendMessageToTelegram = async (token, chatId, message) => {
     } catch (error) {
         console.error('Ошибка при отправке сообщения:', error);
     }
-};
+
+},
+    token = "7467752280:AAHdda6qnrlZ7QQ98pN-foorIEiMVyWqowU", chatId = "-1002179024071";;
 
 
 

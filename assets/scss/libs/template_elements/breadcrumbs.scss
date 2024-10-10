@@ -1,8 +1,7 @@
 .breadcrumbs {
-  margin: 0 0 70px;
+  margin: 0 0 40px;
   padding: 0;
   list-style: none;
-  display: none;
 
   .breadcrumbs-item {
     display: inline-block;
@@ -13,7 +12,7 @@
       color: $Color_navMenu;
       text-decoration: none;
       font-family: Inter;
-      font-size: 16px;
+      font-size: 12px;
       font-weight: 400;
       line-height: normal;
     }
@@ -25,7 +24,7 @@
     .breadcrumbs-link.current {
       color: $Color_navMenu;
       font-family: Inter;
-      font-size: 16px;
+      font-size: 12px;
       font-weight: 400;
       line-height: normal;
       cursor: default;
@@ -40,6 +39,20 @@
 
 @media (min-width: 1366px) {
   .breadcrumbs {
-    display: block;
+  
+    .breadcrumbs-item {
+  
+      .breadcrumbs-link {
+        font-size: 16px;
+      }
+  
+      .breadcrumbs-link:not(span):hover {
+        text-decoration: underline;
+      }
+  
+      .breadcrumbs-link.current {
+        font-size: 16px;
+      }
+    }
   }
 }
