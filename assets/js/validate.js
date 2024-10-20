@@ -33,7 +33,10 @@ export default function validatejs() {
 Товар: ${productItem.querySelector('.product_card-text .product_card-title')?.innerText || 'Не вказано'}
 Ціна: ${productItem.querySelector('.product_card-text .price')?.innerText || 'Не вказано'}
 Модель: ${activeTab ? activeTab.innerText : 'Не вказано'}
+Кількість: ${productItem.querySelector('.counter_input input')?.value || 'Не вказано'}
 `;
+
+                            
                         });
                     }
                 }
@@ -94,14 +97,14 @@ export default function validatejs() {
                 formInstanceData.append('action', 'contact_form');
 
 
-                /* if (form) {
+                if (form) {
                     let selector = document.querySelectorAll('[name="number"]');
                     selector.forEach((item) => {
                         let im = new Inputmask("+38 (999)9999999");
                         im.mask(item);
                     })
 
-                } */
+                }
                 form.addEventListener('submit', (e) => {
                     e.preventDefault();
                     let errorsMarker = [];
@@ -220,7 +223,7 @@ export default function validatejs() {
                         if (formBuy.classList.contains('active')) {
                             message += productItemStr;
                         }
-                        message += `\n\r---------------------------`;
+                        message += `---------------------------`;
                         sendMessageToTelegram(token, chatId, message);
 
                         sendForm(

@@ -7,10 +7,10 @@ export default function counter() {
                 const target = e.target;
                 const counterWrapper = target.closest('.counter_wrapper');
                 const input = counterWrapper.querySelector('input');
-                const priceElement = counter.closest('.product_card-text').querySelector('.price');
-
+                const priceElement = counter.closest('.product_card-text').querySelector('.price_new');
+                const quantityItem = document.querySelector('.quantity_item');
                 const unitPrice = parseFloat(priceElement.dataset.price) || parseFloat(priceElement.textContent.replace(/\D/g, ''));
-
+                const inputField = target.closest('.counter_wrapper').querySelector('input');
                 if (!priceElement.dataset.price) {
                     priceElement.dataset.price = unitPrice;
                 }
@@ -37,9 +37,13 @@ export default function counter() {
                     input.value = value;
                     const newPrice = unitPrice * value;
                     priceElement.textContent = `${newPrice} ₴`;
+                    inputField.value = value;
+                    quantityItem.textContent = value;
                 }
+
             });
         });
     }
+    
 
 }
